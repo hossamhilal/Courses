@@ -362,7 +362,7 @@ button:focus {
 }
 
 .user {
-    background: rgba(255,173,31,.06);
+    background: rgba(255, 173, 31, .06);
     border-radius: 18px;
     height: 64px;
     padding: 0 20px;
@@ -450,12 +450,26 @@ button:focus {
     filter: brightness(0) invert(1);
 }
 
+.loginMobile {
+    display: none;
+}
+
+.loginMobileIcon {
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 15px;
+    border-radius: 50%;
+}
+
+
 .mobile {
     display: none;
 }
 
 .headerData {
     padding: 50px 0 90px;
+    position: relative;
+    z-index: 1;
 }
 
 .headerData h1 {
@@ -481,7 +495,87 @@ button:focus {
 }
 
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:425px) {
+    .headerBox {
+        padding: 15px 0;
+    }
+
+    .logo {
+        max-width: 45px;
+    }
+
+    .dropList {
+        min-width: 120px;
+        top: 100%;
+        margin-top: 10px;
+        left: calc(-50% - 8px);
+        border-radius: 7px;
+    }
+
+    .dropList::before {
+        content: "";
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-bottom: 7px solid var(--white);
+        position: absolute;
+        top: -7px;
+        right: calc(50% - 2px);
+    }
+
+    .dropList a {
+        font-size: 10px;
+        line-height: 35px;
+        padding: 0 12px;
+    }
+
+    .loginMobile {
+        display: block;
+    }
+
+    .loginActions {
+        display: none;
+    }
+
+    .user {
+        padding: 0;
+        height: 35px;
+        width: 35px;
+        margin-left: 10px;
+    }
+
+    .user .userIcon {
+        margin: 0;
+        width: 35px;
+        height: 35px;
+        border: 0;
+    }
+
+    .userText {
+        display: none;
+    }
+
+    .user i {
+        display: none;
+    }
+
+    .dropList a img {
+        margin-left: 2px;
+    }
+
+    .user .dropList {
+        left: calc(-50% - 24px);
+    }
+
+    .headerData .row {
+        flex-direction: column-reverse;
+    }
+
+    .headerVector img {
+        max-height: 120px;
+        display: block;
+        margin: 0 auto 10px;
+    }
+}
 
 @media screen and (max-width:768px) {
     .openSearch {
@@ -492,22 +586,89 @@ button:focus {
         font-size: 15px;
     }
 
+    .searchBox {
+        height: 45px;
+    }
+
     .searchBox input {
         font-size: 12px;
-        width: calc(100% - 45px);
+        width: calc(100% - 35px);
         padding: 0 10px;
     }
 
     .searchBox .btnGrey {
-        width: 45px;
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
     }
 
     .searchPopup .close {
         right: 10px;
+        font-size: 25px;
+    }
+
+    .header {
+        background-size: contain;
+    }
+
+    .headerData {
+        padding: 10px 0;
+    }
+
+    .headerData h1 {
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 3px;
+    }
+
+    .headerData p {
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    .headerData .btnOrange {
+        height: 35px;
+        font-size: 12px;
+        padding: 0 13px;
+        margin-bottom: 20px;
     }
 }
 
-@media (min-width:768px) and (max-width:992px) {}
+@media (min-width:575px) and (max-width:1024px) {
+    .headerBox {
+        padding: 20px 0;
+    }
+
+    .logo {
+        max-width: 55px;
+    }
+
+    .loginActions a {
+        width: 90px;
+        height: 35px;
+        border-radius: 7px;
+        font-size: 10px;
+        margin: 0 0 0 15px;
+    }
+
+    .user {
+        border-radius: 10px;
+        height: 45px;
+        padding: 0 12px;
+        margin-left: 20px;
+    }
+
+    .user .userIcon {
+        width: 35px;
+        height: 35px;
+        border-width: 1px;
+    }
+
+    .headerData {
+        padding: 30px 0;
+    }
+}
 
 @media screen and (max-width:1024px) {
     .navMenu {
@@ -516,12 +677,11 @@ button:focus {
         right: 0;
         width: 240px;
         height: 100vh;
-        background: #FCFCFC;
+        background: #fcfcfc;
         z-index: 999;
         padding: 30px 0;
         transition: all .5s ease-in-out;
         transform: translateX(100%);
-        background: #202020;
     }
 
     .navMenu.show {
@@ -534,7 +694,7 @@ button:focus {
 
     .navMenu a {
         display: block;
-        margin: 15px 0;
+        margin: 8px 0;
         padding: 0 20px;
         font-size: 13px;
     }
@@ -579,7 +739,7 @@ button:focus {
 
     .menuBtn span {
         width: 100%;
-        background: #fff;
+        background: #585858;
         height: 2px;
         display: block;
         border-radius: 5px;
@@ -596,20 +756,23 @@ button:focus {
     }
 }
 
-@media (min-width:1025px) and (max-width:1200px) {
-    .navMenu a {
-        display: flex;
+@media (min-width:992px) and (max-width:1200px) {
+    .headerData h1 {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 15px;
     }
 }
+
 @media (min-width:1200px) {
     .user {
-        width: 227px;
+        min-width: 227px;
     }
 
     .dropList {
         left: 15px;
         right: 15px;
-        width: calc( 100% - 30px );
+        width: calc(100% - 30px);
     }
 }
 
@@ -762,6 +925,54 @@ button:focus {
     left: 0;
 }
 
+@media screen and (max-width:768px) {
+    .secPadding {
+        padding: 30px 0;
+    }
+
+    .secHeader {
+        margin-bottom: 20px;
+    }
+
+    .secHeader h2 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .secHeader p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .courseCat {
+        margin-bottom: 15px;
+        padding: 15px 10px;
+    }
+
+    .courseCat .icon {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 10px;
+    }
+
+    .courseCat h3 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:575px) and (max-width:1024px) {
+    .col-12 {
+        padding: 0 5px;
+    }
+}
+
+@media (min-width:769px) and (max-width:992px) {
+    .secHeader h2 {
+        font-size: 27px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+}
 
 /*==========================||---------------------------||========================*/
 /*==========================||       RECENT COURSES      ||========================*/
@@ -773,7 +984,6 @@ button:focus {
     border-radius: 13px 13px 5px 5px;
     overflow: hidden;
     padding: 7px;
-    margin-bottom: 20px;
 }
 
 .coursePic {
@@ -937,6 +1147,57 @@ button:focus {
     visibility: visible;
 }
 
+@media screen and (max-width:768px) {
+    .coursePic {
+        height: 200px;
+    }
+
+    .courseBody {
+        padding: 10px 5px 5px;
+    }
+
+    .course h2 {
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+
+    .courseTrainer {
+        margin-bottom: 3px;
+        font-size: 12px;
+    }
+
+    .course p {
+        font-size: 11px;
+    }
+
+    .courseCounts {
+        padding: 10px 0;
+    }
+
+    .courseCount h5 {
+        font-size: 10px;
+    }
+
+    .courseCount::after {
+        height: 12px;
+        margin: 0 7px;
+    }
+
+    .course .btnGrey {
+        font-size: 10px;
+    }
+
+    .owlNav .owl-nav {
+        font-size: 25px;
+    }
+
+    .owlNav .owl-nav>div::before {
+        height: 2px;
+        top: calc(50% - 1px);
+        width: 22px;
+    }
+}
+
 /*==========================||---------------------------||========================*/
 /*==========================||            WHY US         ||========================*/
 /*==========================||---------------------------||========================*/
@@ -989,6 +1250,40 @@ button:focus {
     transform: scale(1.15);
     transform: scale(1.20);
     z-index: 1;
+}
+
+@media screen and (max-width:992px) {
+    .whyBox {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .whyBox .icon {
+        width: 40px;
+        height: 40px;
+        margin: 10px auto;
+    }
+
+    .whyBox .icon img {
+        max-height: 100%;
+    }
+
+    .whyBox h3 {
+        font-size: 13px;
+        line-height: 25px;
+        margin: 0;
+    }
+
+    .whyBox p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1199px) {
+    .whyBox h3 {
+        font-size: 17px;
+        line-height: 30px;
+    }
 }
 
 /*==========================||---------------------------||========================*/
@@ -1058,6 +1353,33 @@ button:focus {
 .trainer:hover .trainerData {
     margin-bottom: 20px;
 }
+
+@media screen and (max-width:992px) {
+    .trainer {
+        margin-bottom: 40px;
+    }
+
+    .trainer .trainerAvatar {
+        height: 250px;
+    }
+
+    .trainer .trainerAvatar img {
+        max-height: 100%;
+    }
+
+    .trainer .trainerData {
+        padding: 10px 10px 20px;
+    }
+
+    .trainer a {
+        font-size: 14px;
+    }
+
+    .trainer p {
+        font-size: 12px;
+    }
+}
+
 
 /*==========================||---------------------------||========================*/
 /*==========================||        RECENT BLOGS       ||========================*/
@@ -1210,6 +1532,78 @@ button:focus {
     color: #E8479F;
 }
 
+@media screen and (max-width:768px) {
+    .blog {
+        margin-bottom: 20px;
+    }
+
+    .blog .blogHead {
+        height: 200px;
+    }
+
+    .blog .blogDate {
+        width: 45px;
+        height: 45px;
+        font-size: 10px;
+        line-height: 13px;
+        top: 12px;
+        right: 12px;
+    }
+
+    .blog .blogDate::before {
+        top: 3px;
+        right: 3px;
+        width: 39px;
+        height: 39px;
+    }
+
+    .blogCounts {
+        padding: 10px 0 3px;
+    }
+
+    .blogCount span {
+        font-size: 11px;
+    }
+
+    .blogCount img {
+        max-width: 11px;
+    }
+
+    .blogCount::after {
+        height: 10px;
+        margin: 0 6px;
+    }
+
+    .blog h3 {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 5px;
+    }
+
+    .blog p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .blog .blogLink {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1024px) {
+    .blogCounts {
+        padding: 10px 0;
+    }
+
+    .blog h3 {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+}
+
 /*==========================||---------------------------||========================*/
 /*==========================||            CONTACT        ||========================*/
 /*==========================||---------------------------||========================*/
@@ -1264,6 +1658,31 @@ textarea.form-control {
     margin: 0 auto;
 }
 
+@media screen and (max-width:768px) {
+    .field {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .form-control::placeholder {
+        font-size: 12px;
+    }
+
+    textarea.form-control {
+        height: 140px;
+        padding: 10px;
+    }
+
+    .contactBox .btnOrange {
+        height: 40px;
+        width: 110px;
+        font-size: 12px;
+    }
+}
 
 /*==========================||---------------------------||========================*/
 /*==========================||         NEWSLETTER        ||========================*/
@@ -1307,12 +1726,43 @@ textarea.form-control {
 
 .newsletterForm .btnOrange {
     width: 125px;
-    height: 55px;
+    height: 100%;
     border-radius: 9px;
 }
 
 .newsletterForm input::placeholder {
     color: #C8C8C8;
+}
+
+@media screen and (max-width:768px) {
+    .newsletterBox {
+        padding: 0;
+    }
+    
+    .newsletterBox h1 {
+        font-size: 14px;
+        line-height: 35px;
+    }
+    
+    .newsletterBox h3 {
+        font-size: 12px;
+    }
+    
+    .newsletterForm {
+        height: 40px;
+        max-width: 450px;
+    }
+    
+    .newsletterForm .btnOrange {
+        width: 60px;
+        font-size: 12px;
+    }
+    
+    .newsletterForm input {
+        width: calc(100% - 60px);
+        font-size: 12px;
+        padding: 0 10px;
+    }
 }
 
 /*==========================||---------------------------||========================*/
@@ -1427,11 +1877,54 @@ textarea.form-control {
     color: #FFAD1F;
 }
 
+@media screen and (max-width:768px) {
+    .footer {
+        padding: 20px 0 0 0;
+    }
+    
+    .footer .logo {
+        margin: 0 0 10px 0;
+    }
+    
+    .footer p {
+        font-size: 11px;
+        line-height: 23px;
+        margin-bottom: 5px;
+    }
+    
+    .footerBlock {
+        margin: 10px 0;
+    }
+    
+    .footer h3 {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    
+    .footerBlock a {
+        font-size: 11px;
+        line-height: 30px;
+    }
+    
+    .social {
+        margin: 10px 0 0 0;
+    }
+    
+    .social a {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .copyright {
+        padding: 8px 0;
+    }
+}
+
 /*==========================||---------------------------||========================*/
 /*==========================||          Home Ads         ||========================*/
 /*==========================||---------------------------||========================*/
 
-
+@media screen and (max-width:768px) {}
 
 /*==========================||---------------------------||========================*/
 /*==========================||         Pagination        ||========================*/

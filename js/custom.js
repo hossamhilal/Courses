@@ -10,21 +10,21 @@
     //     }); 
     // });
 
-    // // OPEN SIDE  MENU 
-    // $('.menuBtn').on('click', function(){
-    //     $('.navMenu').toggleClass('show');
-    //     $('.navOverlay').addClass('show');  
-    //     setTimeout(function(){
-    //         $('body').addClass('stopScroll');
-    //     }, 200); 
-    // });
+    // OPEN SIDE  MENU 
+    $('.menuBtn').on('click', function(){
+        $('.navMenu').toggleClass('show');
+        $('.navOverlay').addClass('show');  
+        setTimeout(function(){
+            $('body').addClass('stopScroll');
+        }, 200); 
+    });
 
-    // // CLOSE SIDE MENU 
-    // $('.navOverlay').on('click', function(){
-    //     $(this).removeClass('show');
-    //     $('.navMenu').removeClass('show');  
-    //     $('body').removeClass('stopScroll');  
-    // });
+    // CLOSE SIDE MENU 
+    $('.navOverlay').on('click', function(){
+        $(this).removeClass('show');
+        $('.navMenu').removeClass('show');  
+        $('body').removeClass('stopScroll');  
+    });
 
     // Open Search 
     $('.openSearch').on('click', function() {
@@ -57,7 +57,7 @@
         e.stopPropagation(); 
     });
 
-    
+
     // Header OWL 
     $('.owlCourses').owlCarousel({
         rtl: true,
