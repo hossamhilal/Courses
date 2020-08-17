@@ -254,14 +254,18 @@
     // });
 
     // Toggle Password 
-    // $('.showPass').click(function(){
-    //     let pass = $('#password');
-    //     if($(pass).attr('type') == 'password'){
-    //          $(pass).prop('type', 'text');
-    //     }else{
-    //          $(pass).prop('type', 'password');
-    //     }
-    // });
+    $('.showPassword').click(function(){
+        let passWord = $(this).parent().find('input');
+        if($(passWord).attr('type') == 'password'){
+             $(passWord).prop('type', 'text');
+        }else{
+             $(passWord).prop('type', 'password');
+        }
+    });
+
+    $('.customCheckBox input').click(function(){
+        console.log('eman')
+    });
     
     // iniat WOW Js
     new WOW().init();
