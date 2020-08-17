@@ -31,15 +31,32 @@
         $('.searchPopup').addClass('show');   
     });
 
-    // Open Search 
-    $('.dropList').on('click', function(e) {
-        e.stopPropagation(); 
-    });
-
     // Close Search 
     $('.searchPopup .close').on('click', function() {
         $('.searchPopup').removeClass('show');   
     });
+    
+    //  Open dropList
+    $('.dropToggle').on('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        if($(this).find('.dropList').hasClass('show')){
+            $('.dropList').removeClass('show');
+        } else {
+            $('.dropList').removeClass('show');
+            $(this).find('.dropList').toggleClass('show');
+        } 
+    });
+
+    //  Close dropList
+    $(document).on('click', function(){
+        $('.dropList').removeClass('show');
+    });
+
+    $('.dropList').on('click', function(e) {
+        e.stopPropagation(); 
+    });
+
     
     // Header OWL 
     $('.owlCourses').owlCarousel({

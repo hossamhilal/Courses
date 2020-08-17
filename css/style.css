@@ -361,6 +361,95 @@ button:focus {
     margin-right: 15px;
 }
 
+.user {
+    background: rgba(255,173,31,.06);
+    border-radius: 18px;
+    height: 64px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.user .userIcon {
+    width: 40px;
+    height: 40px;
+    border: 2px dashed #FFAD1F;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+.user .userIcon img {
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.userText {
+    color: #404040;
+    font-size: 10px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.dropToggle {
+    position: relative;
+}
+
+.dropList {
+    background: var(--white);
+    width: 100%;
+    min-width: 170px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 5;
+    border-radius: 0px 0px 7px 7px;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: all .3s ease-in-out;
+}
+
+.dropList.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropList a {
+    display: block;
+    border-bottom: 1px solid #F3F3F3;
+    font-size: 13px;
+    line-height: 55px;
+    font-weight: 500;
+    padding: 0 20px;
+    color: #484848;
+    transition: all .3s ease-in-out;
+}
+
+.dropList a:last-of-type {
+    border: 0;
+}
+
+.dropList a:hover {
+    background: #FFAD1F;
+    color: #fff;
+}
+
+.dropList a img {
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.dropList a:hover img {
+    filter: brightness(0) invert(1);
+}
+
 .mobile {
     display: none;
 }
@@ -510,6 +599,17 @@ button:focus {
 @media (min-width:1025px) and (max-width:1200px) {
     .navMenu a {
         display: flex;
+    }
+}
+@media (min-width:1200px) {
+    .user {
+        width: 227px;
+    }
+
+    .dropList {
+        left: 15px;
+        right: 15px;
+        width: calc( 100% - 30px );
     }
 }
 
@@ -794,6 +894,47 @@ button:focus {
 
 .course .btnGrey:hover img {
     filter: brightness(0) invert(1);
+}
+
+.owlNav .owl-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.owlNav .owl-nav>div {
+    margin: 0 15px;
+    color: #BFBFBF;
+    position: relative;
+}
+
+.owlNav .owl-nav>div:hover {
+    color: #E8479F;
+}
+
+.owlNav .owl-nav>div::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    background: #E8479F;
+    height: 3px;
+    top: calc(50% - 2px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.owlNav .owl-prev::before {
+    left: -15px;
+}
+
+.owlNav .owl-next::before {
+    right: -15px;
+}
+
+.owlNav .owl-nav>div:hover::before {
+    opacity: 1;
+    visibility: visible;
 }
 
 /*==========================||---------------------------||========================*/
@@ -1147,7 +1288,7 @@ textarea.form-control {
 }
 
 .newsletterForm {
-    margin: 30px auto  0;
+    margin: 30px auto 0;
     height: 55px;
     background: #FCFCFC 0% 0% no-repeat padding-box;
     border-radius: 5px;
@@ -1157,7 +1298,7 @@ textarea.form-control {
 }
 
 .newsletterForm input {
-    width: calc( 100% - 125px );
+    width: calc(100% - 125px);
     border: 0;
     background: transparent;
     padding: 0 15px;
