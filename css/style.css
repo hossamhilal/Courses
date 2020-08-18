@@ -2359,7 +2359,11 @@ option:disabled {
 
     .bradCrumbBox,
     .bradCrumbBox a {
-        font-size: 12px;
+        font-size: 11px;
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        padding: 0 3px;
     }
 
     .userType {
@@ -2693,6 +2697,7 @@ option:disabled {
     font-weight: 500;
 }
 
+.joinCourse ,
 .deleteCourse {
     width: 174px;
     height: 50px;
@@ -2709,7 +2714,6 @@ option:disabled {
     width: 100%;
     border-radius: inherit;
 }
-
 
 .tabsBtns {
     margin-bottom: 30px;
@@ -2927,6 +2931,203 @@ option:disabled {
     width: auto;
 }
 
+.courseTrainerBox {
+    border: 1px solid #ECECEC;
+}
+
+.courseTrainerWrapper {
+    display: flex;
+}
+
+.courseTrainerBoxPic {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.courseTrainerBoxPic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.courseTrainerBoxData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.courseTrainerBoxData h3 {
+    font-size: 18px;
+    line-height: 30px;
+    color: #484848;
+}
+
+.courseTrainerBoxData p {
+    color: #929292;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.trainerCoursePrice {
+    font-size: 20px;
+    line-height: 45px;
+    color: #404040;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.trainerCoursePrice label {
+    margin: 0 0 0 10px;
+}
+
+.trainerCoursePrice .btnOrange {
+    border-radius: 12px;
+    width: 174px;
+    height: 50px;
+    margin-right: 40px;
+}
+
+.comments {
+    border: 1px solid #ECECEC;
+}
+
+.comment {
+    display: flex;
+    border-bottom: 1px solid #ECECEC;
+    padding: 20px 0;
+}
+
+.comment:first-of-type {
+    padding-top: 0;
+}
+
+.commentPic {
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    margin-left: 12px;
+}
+
+.commentPic img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.commentBox {
+    width: calc( 100% - 92px );
+}
+
+.commentHead {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.commentUser h2 {
+    font-size: 16px;
+    color: #707070;
+    line-height: 28px;
+}
+
+.stars {
+    color: #E5E5E5;
+    margin-bottom: 5px;
+}
+
+.stars > * {
+    display: inline-block;
+}
+
+.stars .stared {
+    color: #FFC107;
+}
+
+.comment .stars {
+    margin-top: -5px;
+}
+
+.commentDate {
+    font: normal 14px/19px Roboto;
+    letter-spacing: 0px;
+    color: #A7A7A7;
+    margin-bottom: .5rem;
+}
+
+.commentBody p {
+    color: #828282;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.addCommentWrapper {
+    padding: 40px 0 0 0;
+}
+
+.addCommentWrapper h3 {
+    color: #565656;
+    font-size: 25px;
+    line-height: 44px;
+    margin-bottom: 30px;
+}
+
+.addRate {
+    margin-bottom: 15px;
+    font-size: 21px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.addRate input {
+    display: none;
+}
+
+.addRate input:checked ~ label {
+    color: #FFC107;
+}
+
+.addRate label {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.addRate label:hover {
+    color: #FFC107;
+}
+
+.commentInput {
+    margin-bottom: 20px;
+}
+
+.commentInput textarea {
+    width: 100%;
+    border: 0;
+    resize: none;
+    height: 145px;
+    background: #FBFBFB;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.commentInput textarea::placeholder {
+    color: #ABABAB;
+}
+
+.addCommentWrapper .btnOrange {
+    width: 156px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+
 @media screen and (max-width:575px) {
     .order1 {
         order: 1;
@@ -2938,6 +3139,160 @@ option:disabled {
 
     .order3 {
         order: 3;
+    }
+
+    .leturesHead {
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .addLetureForm {
+        width: 100%;
+        padding: 5px;
+        align-items: center;
+    }
+
+    .addLetureForm label {
+        font-size: 11px
+    }
+
+    .addLetureForm input {
+        width: 100%;
+        height: 35px;
+        padding: 0 10px;
+        font-size: 12px;
+        border: 1px solid #f3f3f3;
+        border-radius: 5px;
+    }
+
+    .lectures .btnOrange {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .lectures {
+        padding: 5px;
+    }
+
+    .lecture {
+        padding: 5px;
+    }
+
+    .lecture::before {
+        content: url(../images/icon-play.png);
+        top: 4px;
+    }
+
+    .lecture input {
+        padding: 0 5px;
+        font-size: 10px;
+        height: 25px;
+        width: calc(100% - 55px);
+    }
+
+    .lectureAction span {
+        display: none;
+    }
+
+    .lectureBtn {
+        width: 25px;
+        height: 25px;
+    }
+
+    .addLessonForm {
+        flex-direction: column;
+    }
+
+    .addLessonForm .fieldBox {
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .addLessonForm .fieldBox label {
+        font-size: 10px;
+    }
+
+    .addLessonForm .fieldBox input {
+        width: 100%;
+    }
+
+    .lesson {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .lesson input {
+        width: calc(100% - 25px);
+        margin-left: auto;
+    }
+
+    .lesson .lectureAction {
+        position: absolute;
+        left: 0;
+        flex-direction: column;
+    }
+
+    .lesson .lectureAction .lectureBtn:last-of-type {
+        margin: 2px 0 0 0;
+    }
+
+    .courseTrainerWrapper {
+        margin-bottom: 15px;
+    }
+
+    .commentPic {
+        width: 45px;
+        height: 45px;
+        margin-left: 5px;
+        border-radius: 50%;
+    }
+    
+    .commentBox {
+        width: calc( 100% - 50px );
+    }
+    
+    .commentHead {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .commentUser .stars {
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    .commentUser h2 {
+        font-size: 14px;
+    }
+    
+    .commentDate {
+        font-size: 12px;
+    }
+    
+    .addCommentWrapper {
+        padding: 20px 0 0 0;
+    }
+    
+    .addCommentWrapper h3 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    
+    .commentInput textarea {
+        height: 180px;
+    }
+    
+    .addCommentWrapper .btnOrange {
+        width: 125px;
+        height: 45px;
+        margin-bottom: 10px;
     }
 }
 
@@ -2961,11 +3316,12 @@ option:disabled {
     }
 
     .coursePrice {
-        font-size: 20px;
+        font-size: 13px;
         display: inline-block;
         margin-left: 50px;
     }
 
+    .joinCourse ,
     .deleteCourse {
         height: 40px;
         width: 110px;
@@ -2975,11 +3331,15 @@ option:disabled {
     }
 
     .tabBtn {
-        min-width: 79px;
-        padding: 8px 10px;
+        min-width: 67px;
+        padding: 8px 5px;
         border-radius: 6px;
-        font-size: 13px;
-        margin-bottom: 12px;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .tabBtn:last-of-type {
+        margin: 0;
     }
 
     .tabsBtns {
@@ -3000,6 +3360,96 @@ option:disabled {
     .courseTitle {
         font-size: 15px;
     }
+
+    .courseTrainerBoxPic {
+        width: 50px;
+        height: 50px;
+    }
+
+    .courseTrainerBoxData h3 {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .trainerCoursePrice {
+        font-size: 13px;
+    }
+
+    .trainerCoursePrice .btnOrange {
+        font-size: 11px;
+        height: 39px;
+        width: 85px;
+        border-radius: 5px;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .addLetureForm {
+        padding: 0 10px 0 0;
+        width: calc(100% - 45px);
+    }
+
+    .addLetureForm label {
+        font-size: 11px;
+    }
+
+    .addLetureForm input {
+        width: calc(100% - 90px);
+        padding: 0 10px;
+        font-size: 11px;
+    }
+
+    .addLessonForm .fieldBox:last-of-type input {
+        width: calc(100% - 99px);
+    }
+
+    .lectures .btnOrange {
+        width: 40px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .lecture {
+        padding: 5px 5px 5px 0;
+    }
+
+    .lecture::before {
+        content: url(../images/icon-play.png);
+        top: 8px;
+    }
+
+    .lectureAction>* {
+        width: 35px;
+        height: 35px;
+    }
+
+    .lectureAction span {
+        display: none;
+    }
+
+    .lecture input {
+        font-size: 11px;
+        height: 35px;
+        padding: 0 5px;
+    }
+
+    .addCommentWrapper h3 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .addCommentWrapper .btnOrange {
+        width: 125px;
+        height: 45px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 575px) {
+    .courseTrainerBox .col-12 {
+        padding: 0 15px;
+    }
 }
 
 @media (min-width:1024px) {
@@ -3008,11 +3458,11 @@ option:disabled {
     }
 
     .addLessonForm .fieldBox:first-of-type input {
-        width: calc( 100% - 97px);
+        width: calc(100% - 97px);
     }
-    
+
     .addLessonForm .fieldBox:last-of-type input {
-        width: calc( 100% - 144px);
+        width: calc(100% - 144px);
     }
 
     .lecture input {
