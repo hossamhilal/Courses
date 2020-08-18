@@ -186,6 +186,39 @@ textarea:active {
     transform: translateX(-15px);
 }
 
+.btnPurple {
+    background: #E8479F;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    transition: all .3s ease-in-out;
+}
+
+.btnPurple:hover {
+    background: #FFAD1F;
+    color: #fff;
+}
+
+.btnRed {
+    background: #FF0000;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    transition: all .3s ease-in-out;
+}
+
+.btnRed:hover {
+    background: #E8479F;
+    color: #fff;
+}
+
 button:active,
 button:hover,
 button:focus {
@@ -984,6 +1017,7 @@ button:focus {
     border-radius: 13px 13px 5px 5px;
     overflow: hidden;
     padding: 7px;
+    margin-bottom: 30px;
 }
 
 .coursePic {
@@ -1148,6 +1182,10 @@ button:focus {
 }
 
 @media screen and (max-width:768px) {
+    .course {
+        margin-bottom: 20px;
+    }
+
     .coursePic {
         height: 200px;
     }
@@ -2240,7 +2278,7 @@ option:disabled {
     line-height: 28px;
     color: #8A8A8A;
     margin: 0;
-    padding-right: 20px;
+    padding-right: 25px;
     position: relative;
 }
 
@@ -2259,8 +2297,8 @@ option:disabled {
     right: 0;
 }
 
-.customCheckBox input:checked + label::before,
-.customCheckBox:hover input + label::before {
+.customCheckBox input:checked+label::before,
+.customCheckBox:hover input+label::before {
     border-color: #FFAD1F;
 }
 
@@ -2279,7 +2317,7 @@ option:disabled {
     display: block;
 }
 
-.customCheckBox input:checked + label::after {
+.customCheckBox input:checked+label::after {
     border-color: #FFAD1F;
 }
 
@@ -2408,29 +2446,586 @@ option:disabled {
 }
 
 @media (min-width: 1200px) {
-    .container {
+    .signUpPage .container {
         max-width: 1140px;
     }
 }
 
 /*==========================||---------------------------||========================*/
-/*==========================||          Home Ads         ||========================*/
+/*==========================||        Trainer Page       ||========================*/
 /*==========================||---------------------------||========================*/
 
-@media screen and (max-width:768px) {}
+.trainerPageHead {
+    padding: 30px 0 40px;
+    text-align: center;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.trainerPageAvatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 13px;
+    margin: 0 auto 10px;
+}
+
+.trainerPageAvatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.trainerPageHead h2 {
+    color: #1C1C1C;
+    font-size: 22px;
+    line-height: 38px;
+    font-weight: 500;
+}
+
+.trainerPageHead p {
+    color: #929292;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.trainerCourses {
+    padding: 30px 0 40px;
+}
+
+.trainerCoursesHead {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trainerCoursesInfo {
+    margin-bottom: 40px;
+}
+
+.trainerCoursesInfo h3 {
+    color: #565656;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 11px;
+}
+
+.trainerCoursesInfo p {
+    color: #929292;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.addNewCourse {
+    width: 172px;
+    height: 60px;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.addNewCourse i {
+    margin-left: 10px;
+}
+
+@media screen and (max-width:425px) {
+    .trainerCoursesHead {
+        flex-direction: column;
+    }
+
+    .addNewCourse {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .trainerPageHead {
+        padding: 0 0 20px;
+    }
+
+    .trainerPageAvatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .trainerPageHead h2 {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .trainerPageHead p {
+        font-size: 13px;
+    }
+
+    .trainerCourses {
+        padding: 20px 0;
+    }
+
+    .trainerCoursesInfo {
+        margin-bottom: 20px;
+    }
+
+    .trainerCoursesInfo h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .trainerCoursesInfo p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .addNewCourse {
+        height: 45px;
+        width: 150px;
+    }
+}
 
 
 /*==========================||---------------------------||========================*/
-/*==========================||          Home Ads         ||========================*/
+/*==========================||          New Course       ||========================*/
 /*==========================||---------------------------||========================*/
 
-@media screen and (max-width:768px) {}
+.uploadWrapper {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.uploadWrapper>label {
+    color: #6B6B6B;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.uploadBox {
+    width: 99px;
+    height: 88px;
+    border: 1px dashed #FFAD1F;
+    border-radius: 6px;
+    margin: 0 auto 10px;
+    position: relative;
+}
+
+.uploadBtn {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    position: absolute;
+    z-index: 1;
+}
+
+.uploadBtn input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.uploadBtn label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.uploadBtn label img {
+    max-width: 40px;
+}
+
+.uploadBtn input:hover+label {
+    background: rgba(255, 173, 31, 0.6);
+}
+
+.uploadBtn input:hover+label img {
+    filter: brightness(0) invert(1);
+}
+
+.uploadBox .previewBox,
+.uploadBox .previewBox img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
 
 /*==========================||---------------------------||========================*/
-/*==========================||          Home Ads         ||========================*/
+/*==========================||          Course Page      ||========================*/
 /*==========================||---------------------------||========================*/
 
-@media screen and (max-width:768px) {}
+.coursePageHead {
+    padding: 0 0 40px 0;
+}
+
+.coursePageHead .courseCounts {
+    background: #FCFCFC;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 15px;
+}
+
+.coursePageHead .courseCount::after {
+    margin: 0 15px;
+}
+
+.coursePageHead h2 {
+    color: #565656;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.coursePageHead p {
+    color: #929292;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+
+.coursePrice {
+    color: #1A1818;
+    font-size: 30px;
+    line-height: 57px;
+    font-weight: 500;
+}
+
+.deleteCourse {
+    width: 174px;
+    height: 50px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.cursePageVector {
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.cursePageVector img {
+    width: 100%;
+    border-radius: inherit;
+}
+
+
+.tabsBtns {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabBtn {
+    background: #F6F6F6;
+    border-radius: 9px;
+    padding: 11px 20px;
+    color: #585858;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    min-width: 180px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.tabBtn:last-of-type {
+    margin-left: 0;
+}
+
+.tabBtn:hover,
+.tabBtn.active {
+    background: #FFAD1F;
+    color: #fff;
+}
+
+.tabContent {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    transform: translateY(30px);
+    height: 0;
+}
+
+.tabContent.show {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    transform: translateY(0);
+}
+
+.courseForm {
+    border: 1px solid #FFAD1F;
+}
+
+.tabPadding {
+    padding: 30px;
+    border-radius: 17px;
+}
+
+.courseForm textarea {
+    background: transparent;
+    width: 100%;
+    color: #929292;
+    font-size: 14px;
+    line-height: 28px;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+.courseTitle {
+    color: #1C1C1C;
+    font-size: 20px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.courseTitle::before {
+    content: '';
+    width: 5px;
+    height: 20px;
+    background: #FFAD1F;
+    display: inline-block;
+    margin-left: 12px;
+    border-radius: 5px;
+}
+
+.lectures {
+    border: 1px solid #ECECEC;
+    margin-bottom: 30px;
+}
+
+.leturesHead {
+    background: #FCFCFC;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.addLetureForm {
+    padding: 5px 15px;
+    width: calc(100% - 55px);
+}
+
+.addLetureForm label {
+    margin: 0;
+    color: #404040;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.addLetureForm input {
+    height: 40px;
+    background: transparent;
+    padding: 0 15px;
+    border: 0;
+    color: #929292;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.lectures .btnOrange {
+    width: 55px;
+    height: 54px;
+    border-radius: 6px;
+}
+
+.lecture {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 15px 10px 0;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.lecture:last-of-type {
+    border: 0;
+}
+
+.lecture::before {
+    content: url(../images/icon-play.svg);
+    position: absolute;
+    top: 21px;
+    right: 0;
+}
+
+.lecture input {
+    background: transparent;
+    height: 40px;
+    padding: 0 15px;
+    border: 0;
+    color: #929292;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.lecture input.focused {
+    color: #BFBFBF;
+}
+
+.lectureAction {
+    display: flex;
+    align-items: center;
+}
+
+.lectureBtn {
+    width: 60px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.lectureBtn:hover {
+    color: #fff;
+}
+
+.lectureBtn:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.editLecture {
+    background: #F6F6F6;
+    color: #585858;
+}
+
+.editLecture:hover {
+    background: #388add;
+}
+
+.deleteLecture {
+    color: #FF0D0D;
+    background: rgba(255, 12, 12, .04);
+    margin-right: 5px;
+}
+
+.deleteLecture:hover {
+    background: #FF0D0D;
+}
+
+.lectureBtn span {
+    margin-right: 5px;
+}
+
+.addLessonForm {
+    display: flex;
+}
+
+.addLessonForm .fieldBox {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.addLessonForm input {
+    width: auto;
+}
+
+@media screen and (max-width:575px) {
+    .order1 {
+        order: 1;
+    }
+
+    .order2 {
+        order: 2;
+    }
+
+    .order3 {
+        order: 3;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .cursePageVector {
+        margin-bottom: 15px;
+    }
+
+    .coursePageHead .courseCounts {
+        padding: 10px;
+    }
+
+    .coursePageHead h2 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .coursePage p {
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    .coursePrice {
+        font-size: 20px;
+        display: inline-block;
+        margin-left: 50px;
+    }
+
+    .deleteCourse {
+        height: 40px;
+        width: 110px;
+        font-size: 13px;
+        float: left;
+        margin: 10px auto;
+    }
+
+    .tabBtn {
+        min-width: 79px;
+        padding: 8px 10px;
+        border-radius: 6px;
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .tabsBtns {
+        margin-bottom: 20px;
+    }
+
+    .tabPadding {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .courseForm textarea {
+        font-size: 12px;
+        line-height: 23px;
+        margin-bottom: 15px;
+    }
+
+    .courseTitle {
+        font-size: 15px;
+    }
+}
+
+@media (min-width:1024px) {
+    .addLetureForm input {
+        width: calc(100% - 130px);
+    }
+
+    .addLessonForm .fieldBox:first-of-type input {
+        width: calc( 100% - 97px);
+    }
+    
+    .addLessonForm .fieldBox:last-of-type input {
+        width: calc( 100% - 144px);
+    }
+
+    .lecture input {
+        width: calc(100% - 125px);
+    }
+}
 
 /*==========================||---------------------------||========================*/
 /*==========================||          Home Ads         ||========================*/

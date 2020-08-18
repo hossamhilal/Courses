@@ -208,39 +208,132 @@
     //     $(this).toggleClass('addedToFav');
     // });
 
-    // Filter List
-    $('.productsTab').on('click' , function(e){
-        e.preventDefault();
+    // Toggle Password 
+    $('.showPassword').click(function(){
+        let passWord = $(this).parent().find('input');
+        if($(passWord).attr('type') == 'password'){
+             $(passWord).prop('type', 'text');
+        }else{
+             $(passWord).prop('type', 'password');
+        }
+    });
 
-        $('.productsTab').removeClass('active');
+    // Upload Photo 
+    function uploadImage(input , place) {
+        if (input.files && input.files[0]) {
+            let reader = new FileReader();
+            reader.onload = function(e) {
+                let preview = place;
+                preview.hide();
+                preview.html("");
+                let src = e.target.result;
+                let previewImage =  '<img src="'+ src +'"class="img-fluid">';    
+                preview.append(previewImage); 
+                console.log(src);       
+                console.log(e.target.result);       
+                preview.fadeIn(650);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $('.uploadBtn input').change(function() {
+        uploadImage(this , $(this).parent().next('.previewBox'));
+    });
+
+    // Tabs
+    $('.tabBtn').on('click' , function(e){
+        e.preventDefault();
+        $('.tabBtn').removeClass('active');
         $(this).addClass('active');
-        
         var itemId = $(this).attr("href"); 
         $('.tabContent').removeClass('show'); 
         $(itemId).addClass('show');
     });
 
-    // // Upload Photo 
-    // function uploadImage(input , place) {
-    //     if (input.files && input.files[0]) {
-    //         let reader = new FileReader();
-    //         reader.onload = function(e) {
-    //             let preview = place;
-    //             preview.hide();
-    //             preview.html("");
-    //             let src = e.target.result;
-    //             let previewImage =  '<img src="'+ src +'"class="img-fluid">';    
-    //             preview.append(previewImage); 
-    //             console.log(src);       
-    //             console.log(e.target.result);       
-    //             preview.fadeIn(650);
-    //         }
-    //         reader.readAsDataURL(input.files[0]);
-    //     }
-    // }
-    // $('.uploadImage input').change(function() {
-    //     uploadImage(this , $(this).parent().next('.previewBox'));
-    // });
+    // Add Lecture 
+    $('.addLecture').on('click' , function(){
+        let input = $(this).prev('.addLetureForm').find('input');
+        let LectureName = $(input).val();
+        if ($(input).val()) {
+            let newLecture = '<div class="lecture">' +
+                                '<input type="text" disabled value="' + LectureName+ '">' +
+                                '<div class="lectureAction">' +
+                                    '<div class="lectureBtn editLecture"> <img src="images/icon-pencil.png" alt="icon"> <span> تعديل </span></div>' +
+                                    '<div class="lectureBtn deleteLecture"> <img src="images/icon-trash.png" alt="icon"> <span> حذف </span> </div>' +
+                                '</div>' +
+                            '</div>';
+            let lecturesList = $(this).parent().next('.lecturesList');
+            lecturesList.append(newLecture);
+            $(input).val('');
+        }
+    });
+
+    // Edit Lecture 
+    $(document).on('click', '.editLecture' , function(){
+        let textInput = $(this).parent().prev('input');
+        if (textInput.attr('disabled')) {
+            textInput.removeAttr('disabled'); 
+            textInput.focus(); 
+            textInput.addClass('focused');
+        }
+        else {
+            textInput.attr('disabled', 'disabled'); 
+            textInput.removeClass('focused');
+        }
+    });
+
+    // Delete Lecture 
+    $(document).on('click', '.deleteLecture' , function(){
+        let lecture = $(this).parent().parent('.lecture');
+        $(lecture).remove();
+    });
+
+    // Add Lecture 
+    $('.addLesson').on('click' , function(){
+        let lessonInput = $(this).prev('.addLetureForm').find('.lessonName');
+        let LectureInput = $(this).prev('.addLetureForm').find('.lectureName');
+        let lessonName = $(lessonInput).val();
+        let LectureName = $(LectureInput).val();
+        console.log('Lesson Name' , lessonName);
+        console.log('Lecture Name' , LectureName);
+        if ($(lessonInput).val() && $(LectureInput).val()) {
+            let newLesson = '<div class="lecture lesson">' +
+                                '<input type="text" disabled value="' + lessonName + '">' +
+                                '<input type="text" disabled value="' + LectureName + '">' +
+                                '<div class="lectureAction">' +
+                                    '<div class="lectureBtn editLecture"> <img src="images/icon-pencil.png" alt="icon"> <span> تعديل </span></div>' +
+                                    '<div class="lectureBtn deleteLecture"> <img src="images/icon-trash.png" alt="icon"> <span> حذف </span> </div>' +
+                                '</div>' +
+                            '</div>';
+                            console.log(newLesson);
+            let lessonsList = $(this).parent().next('.lecturesList');
+            lessonsList.append(newLesson);
+            $(lessonInput).val('');
+            $(LectureInput).val('');
+        }
+    });
+
+    // Edit Lesson 
+    $(document).on('click', '.lesson .editLecture' , function(){
+        let textInput = $(this).parent().parent().find('input');
+        if (textInput.attr('disabled')) {
+            textInput.removeAttr('disabled'); 
+            textInput.focus(); 
+            textInput.addClass('focused');
+        }
+        else {
+            textInput.attr('disabled', 'disabled'); 
+            textInput.removeClass('focused');
+        }
+    });
+
+
+    // Adjust Textarea Height
+    var textArea = document.querySelectorAll('textarea[data-adaptheight]');
+    textArea.forEach(function(el) {
+        var innerHeight = $(textArea).prop('scrollHeight');
+        $(textArea).css('min-height' , innerHeight );
+    });
 
 
     // Allow Edit Profile 
@@ -253,19 +346,8 @@
     //     }
     // });
 
-    // Toggle Password 
-    $('.showPassword').click(function(){
-        let passWord = $(this).parent().find('input');
-        if($(passWord).attr('type') == 'password'){
-             $(passWord).prop('type', 'text');
-        }else{
-             $(passWord).prop('type', 'password');
-        }
-    });
+    
 
-    $('.customCheckBox input').click(function(){
-        console.log('eman')
-    });
     
     // iniat WOW Js
     new WOW().init();
