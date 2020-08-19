@@ -59,19 +59,6 @@
                             </div>
                         </div>
                     </div>  
-
-                    <!-- Before Login  -->
-                    <!-- <div class="loginActions">
-                        <a href="login.html" class="btnBlue"> تسجيل دخول </a>
-                        <a href="signUp.html" class="btnBlue"> تسجيل جديد </a>
-                    </div> 
-                    <div class="loginMobile dropToggle">
-                        <div class="loginMobileIcon"> <img src="images/icon-user-mob.png" alt="icon" class="img-fluid"> </div>
-                        <div class="userList dropList">
-                            <a href="login.html"> تسجيل دخول </a>
-                            <a href="signUp.html"> تسجيل جديد </a>
-                        </div>
-                    </div> -->
                     
                     <!-- After Login  -->
                     <div class="user dropToggle">
@@ -94,66 +81,98 @@
 
             <!-- Page info -->
             <div class="pageInfo">
-                <h1> إضافة دورة</h1>
+                <h1> الملف الشخصى</h1>
                 <div class="bradCrumbBox"> 
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"> <a href="index.html"> الرئيسية </a> </li>
-                        <li class="breadcrumb-item active" aria-current="page"> إضافة دورة</li>
+                        <li class="breadcrumb-item active" aria-current="page"> الملف الشخصى </li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Add New course Page  -->
-    <div class="newCourse signUpPage secPadding">
+    <!-- Profile Page  -->
+    <div class="profilePage secPadding">
         <div class="container">
-            <div class="loginBox">
-                <form action="course-trainer.html">
-                    <div class="loginFormBox">
-                        <div class="loginFormHead">
-                            <h3> بيانات الدورة الجديدة </h3>
-                            <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+           <div class="row">
+               <div class="col-12 col-sm-4">
+                    <div class="profileBox">
+                        <div class="profileAvatar">
+                            <div class="profileAvatarPreview"> <img src="images/avatar.jpg" alt="avatar" class="img-fluid"></div>
+                            <div class="uploadAvatar">
+                                <input type="file" accept="image/*">
+                                <label> <img src="images/icon-camera.png" alt="upload" class="img-fluid"> </label>
+                            </div>
                         </div>
-                        <div class="loginFormBody">
-                            <div class="field">
-                                <label> اسم الدورة </label>
-                                <input type="text" class="form-control" placeholder="برجاء ادخال اسم الدورة">
-                            </div>
-                            <div class="field">
-                                <label> القسم </label>
-                                <div class="customSelect">
-                                    <select class="form-control">
-                                        <option value="0" selected disabled> برجاء ادخال القسم  </option>
-                                        <option value="1"> القسم 1 </option>
-                                        <option value="2"> القسم 2 </option>
-                                        <option value="3"> القسم 3 </option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label> سعر الدورة </label>
-                                <input type="text" class="form-control" placeholder="برجاء ادخال سعر الدورة">
-                            </div>
-                            <div class="field">
-                                <label> نبذة عن الدورة </label>
-                                <textarea class="form-control" placeholder="برجاء ادخال نبذة عن الدورة"></textarea>
-                            </div>
-                            <div class="uploadWrapper">
-                                <div class="uploadBox">
-                                    <div class="uploadBtn">
-                                        <input type="file" accept="image/*">
-                                        <label> <img src="images/icon-upload.png" alt="upload" class="img-fluid"> </label>
-                                    </div>
-                                    <div class="previewBox"></div>
-                                </div>
-                                <label> صورة الدورة </label>
-                            </div>
-                            <button type="submit" class="btnOrange"> إضافة دورة </button>
+
+                        <h2> حسام سعد هلال </h2>
+                        <div class="profileTabs">
+                            <a href="#tab1" class="profileTab active"> تعديل حسابى </a>
+                            <a href="#tab2" class="profileTab"> تغيير كلمة المرور </a> 
+                        </div>
+                        <div class="profileLogout">
+                            <a href="index.html"> تسجيل الخروج </a>
                         </div>
                     </div>
-                </form>
-            </div>
+               </div>
+               <div class="col-12 col-sm-8">
+                    <div class="tabsContent profileTabsContent">
+                        <div class="tabContent show" id="tab1">
+                            <div class="loginBox">
+                                <form action="">
+                                    <div class="loginFormBox">
+                                        <div class="loginFormBody">
+                                            <div class="field fieldIcon">
+                                                <label> اسم المدرب </label>
+                                                <input type="text" class="form-control" value="حسام سعد هلال" disabled>
+                                                <span class="editField"> <img src="images/icon-edit.png" alt="icon" class="img-fluid"> </span>
+                                            </div>
+                                            <div class="field fieldIcon">
+                                                <label> البريد الالكترونى </label>
+                                                <input type="email" class="form-control" value="hossam.hilal0@gmail.com" disabled>
+                                                <span class="editField"> <img src="images/icon-edit.png" alt="icon" class="img-fluid"> </span>
+                                            </div>
+                                            <div class="field fieldIcon">
+                                                <label> رقم الجوال </label>
+                                                <input type="text" class="form-control" value="+966549782553" disabled>
+                                                <span class="editField"> <img src="images/icon-edit.png" alt="icon" class="img-fluid"> </span>
+                                            </div>
+                                            <button type="submit" class="btnOrange"> حفظ التعديلات </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tabContent" id="tab2">
+                            <div class="loginBox">
+                                <form action="">
+                                    <div class="loginFormBox">
+                                        <div class="loginFormBody">
+                                            <div class="field fieldIcon">
+                                                <label> كلمة المرور القديمة </label>
+                                                <input type="password" class="form-control" placeholder="برجاء ادخال كلمة المرور القديمة">
+                                                <span class="showPassword"> <i class="icofont-eye"></i> </span>
+                                            </div>
+                                            <div class="field fieldIcon">
+                                                <label> كلمة المرور الجديدة </label>
+                                                <input type="password" class="form-control" placeholder="برجاء ادخال كلمة المرور الجديدة">
+                                                <span class="showPassword"> <i class="icofont-eye"></i> </span>
+                                            </div>
+                                            <div class="field fieldIcon">
+                                                <label> تأكيد كلمة المرور الجديدة </label>
+                                                <input type="text" class="form-control" placeholder="برجاء ادخال كلمة المرور الجديدة">
+                                                <span class="showPassword"> <i class="icofont-eye"></i> </span>
+                                            </div>
+                                            <button type="submit" class="btnOrange"> حفظ التعديلات </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
         </div>
     </div>
 

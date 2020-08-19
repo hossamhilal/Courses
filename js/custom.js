@@ -411,6 +411,55 @@
         $(this).parent('.answer').remove();
     });
 
+
+    // Profile Tabs
+    $('.profileTab').on('click' , function(e){
+        e.preventDefault();
+        $('.profileTab').removeClass('active');
+        $(this).addClass('active');
+        var itemId = $(this).attr("href"); 
+        $('.tabContent').removeClass('show'); 
+        $(itemId).addClass('show');
+    });
+
+    // Edit Profile
+    $(document).on('click', '.editField' , function(){
+        let filedInput = $(this).prev('input');
+        if (filedInput.attr('disabled')) {
+            filedInput.removeAttr('disabled'); 
+            filedInput.focus(); 
+            filedInput.addClass('focused');
+        }
+        else {
+            filedInput.attr('disabled', 'disabled'); 
+            filedInput.removeClass('focused');
+        }
+    });
+
+    // Upload Avatar 
+    function uploadAvatar(input , place) {
+        if (input.files && input.files[0]) {
+            let reader = new FileReader();
+            reader.onload = function(e) {
+                let preview = place;
+                let newSrc = e.target.result;
+                $(preview).find('img').attr('src' , newSrc );
+                // console.log('oldAvatar :' , oldAvatar);
+                // console.log('newSrc : ' , newSrc);
+                // oldAvatar = newSrc ;
+                // console.log(oldAvatar);
+                // let previewImage =  '<img src="'+ src +'"class="img-fluid">';    
+                // preview.append(previewImage); 
+                // console.log(src);       
+                // console.log(e.target.result);       
+                // preview.fadeIn(650);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $('.uploadAvatar input').change(function() {
+        uploadAvatar(this , $(this).parent().prev('.profileAvatarPreview'));
+    });
     
 
 
