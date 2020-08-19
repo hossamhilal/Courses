@@ -9,19 +9,6 @@
 /*=================================================================================*/
 /*=================================================================================*/
 
-:root {
-    --gmail: #DD4B39;
-    --twitter: #50ABF1;
-    --facebook: #4267B2;
-    --youtube: #DD4B39;
-    --white: #fff;
-    --red: #FF0000;
-    --yellow: #F8FF1F;
-    --green: #5BFF1F;
-    --greenDark: #3A901B;
-}
-
-
 /* fonts*/
 @font-face {
     font-family: JFFlat;
@@ -142,7 +129,6 @@ textarea:active {
     background: #EFEFEF;
     color: #6B6B6B;
     border: 0;
-    color: #202020;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
@@ -220,8 +206,8 @@ textarea:active {
 }
 
 .btnOpacity {
-    color:  #FFAD1F;
-    background: rgba(255,173,31,0.2);
+    color: #FFAD1F;
+    background: rgba(255, 173, 31, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -448,7 +434,7 @@ button:focus {
 }
 
 .dropList {
-    background: var(--white);
+    background: #fff;
     width: 100%;
     min-width: 170px;
     position: absolute;
@@ -566,7 +552,7 @@ button:focus {
         content: "";
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
-        border-bottom: 7px solid var(--white);
+        border-bottom: 7px solid #fff;
         position: absolute;
         top: -7px;
         right: calc(50% - 2px);
@@ -848,7 +834,6 @@ button:focus {
 
 .coursesCats {
     position: relative;
-    overflow: hidden;
 }
 
 .coursesCats::after {
@@ -1455,7 +1440,7 @@ button:focus {
     height: 100%;
 }
 
-.blog .blogDate {
+.blogDate {
     width: 62px;
     height: 62px;
     background: rgba(0, 0, 0, .79);
@@ -1473,7 +1458,7 @@ button:focus {
     line-height: 19px;
 }
 
-.blog .blogDate::before {
+.blogDate::before {
     content: '';
     border: 1px solid #34A949;
     width: 52px;
@@ -1596,7 +1581,7 @@ button:focus {
         height: 200px;
     }
 
-    .blog .blogDate {
+    .blogDate {
         width: 45px;
         height: 45px;
         font-size: 10px;
@@ -1605,7 +1590,7 @@ button:focus {
         right: 12px;
     }
 
-    .blog .blogDate::before {
+    .blogDate::before {
         top: 3px;
         right: 3px;
         width: 39px;
@@ -1827,7 +1812,7 @@ textarea.form-control {
 .footer {
     background: #353535 0% 0% no-repeat padding-box;
     padding: 40px 0 0 0;
-    color: var(--white);
+    color: #fff;
 }
 
 .footer .logo {
@@ -1841,6 +1826,14 @@ textarea.form-control {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+}
+
+.footer p a {
+    color: #fff;
+}
+
+.footer p a:hover {
+    color: #FFAD1F;
 }
 
 .footerBlocks {
@@ -1865,6 +1858,10 @@ textarea.form-control {
 .footerBlock a {
     font-size: 14px;
     line-height: 45px;
+}
+
+.footerBlock a:hover {
+    color: #FFAD1F;
 }
 
 .footer p img {
@@ -1994,7 +1991,7 @@ textarea.form-control {
 
 .pageInfo h1 {
     color: #6B6B6B;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 50px;
     font-weight: 500;
 }
@@ -2429,8 +2426,8 @@ option:disabled {
         font-size: 12px;
     }
 
-    .loginBox .form-control ,
-    .loginBox .customSelect select.form-control:not([size]):not([multiple])  {
+    .loginBox .form-control,
+    .loginBox .customSelect select.form-control:not([size]):not([multiple]) {
         height: 40px;
         border-radius: 0;
         font-size: 12px;
@@ -2733,7 +2730,7 @@ option:disabled {
     font-weight: 500;
 }
 
-.joinCourse ,
+.joinCourse,
 .deleteCourse {
     width: 174px;
     height: 50px;
@@ -2859,7 +2856,7 @@ option:disabled {
     display: flex;
 }
 
-.addLessonForm > * {
+.addLessonForm>* {
     width: 50%;
 }
 
@@ -3040,7 +3037,7 @@ option:disabled {
 }
 
 .commentBox {
-    width: calc( 100% - 92px );
+    width: calc(100% - 92px);
 }
 
 .commentHead {
@@ -3060,7 +3057,7 @@ option:disabled {
     margin-bottom: 5px;
 }
 
-.stars > * {
+.stars>* {
     display: inline-block;
 }
 
@@ -3108,7 +3105,7 @@ option:disabled {
     display: none;
 }
 
-.addRate input:checked ~ label {
+.addRate input:checked~label {
     color: #FFC107;
 }
 
@@ -3176,7 +3173,7 @@ option:disabled {
     }
 
     .addLetureForm {
-        width: calc( 100% - 30px);
+        width: calc(100% - 30px);
         margin-left: auto;
         padding: 5px;
         align-items: center;
@@ -3254,42 +3251,43 @@ option:disabled {
         margin-left: 5px;
         border-radius: 50%;
     }
-    
+
     .commentBox {
-        width: calc( 100% - 50px );
+        width: calc(100% - 50px);
     }
-    
+
     .commentHead {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .commentUser .stars {
         font-size: 12px;
         margin: 0;
     }
-    
+
     .commentUser h2 {
         font-size: 14px;
     }
-    
+
     .commentDate {
         font-size: 12px;
+        margin: 0;
     }
-    
+
     .addCommentWrapper {
         padding: 20px 0 0 0;
     }
-    
+
     .addCommentWrapper h3 {
         font-size: 16px;
         margin-bottom: 0;
     }
-    
+
     .commentInput textarea {
         height: 180px;
     }
-    
+
     .addCommentWrapper .btnOrange {
         width: 125px;
         height: 45px;
@@ -3322,7 +3320,7 @@ option:disabled {
         margin-left: 50px;
     }
 
-    .joinCourse ,
+    .joinCourse,
     .deleteCourse {
         height: 40px;
         width: 110px;
@@ -3451,9 +3449,11 @@ option:disabled {
     .lecture input {
         width: calc(100% - 125px);
     }
+
     .addLessonForm label:nth-child(2) {
         padding-right: 20px;
     }
+
     .modal-dialog {
         max-width: 800px;
     }
@@ -3473,7 +3473,7 @@ option:disabled {
 }
 
 .addedForm input {
-    width: calc( 100% - 69px );
+    width: calc(100% - 69px);
 }
 
 .addedForm .btnOpacity {
@@ -3494,9 +3494,9 @@ option:disabled {
     margin-bottom: 10px;
 }
 
-.questionTitle ,
+.questionTitle,
 .answerContent {
-    width: calc( 100% - 69px );
+    width: calc(100% - 69px);
     background: #FBFBFB;
     font-size: 14px;
     line-height: 26px;
@@ -3505,7 +3505,7 @@ option:disabled {
     border-radius: 12px;
 }
 
-.deleteQuestion ,
+.deleteQuestion,
 .answer .btnGrey {
     width: 57px;
     height: 50px;
@@ -3515,8 +3515,9 @@ option:disabled {
 }
 
 @media screen and (max-width:768px) {
-    .addedForm .btnOpacity , 
-    .deleteQuestion , 
+
+    .addedForm .btnOpacity,
+    .deleteQuestion,
     .answer .btnGrey {
         width: 40px;
         height: 40px;
@@ -3524,20 +3525,20 @@ option:disabled {
         border-radius: 0;
         margin-right: 5px;
     }
-    
+
     .addedForm input {
-        width: calc( 100% - 45px );
+        width: calc(100% - 45px);
     }
-    
+
     .addedQuestion {
         padding: 5px;
         margin-bottom: 10px;
     }
-    
-    .questionTitle , 
+
+    .questionTitle,
     .answerContent {
         border-radius: 0;
-        width: calc( 100% - 45px );
+        width: calc(100% - 45px);
         padding: 0 5px;
         line-height: 30px;
         display: flex;
@@ -3581,7 +3582,7 @@ option:disabled {
     width: 30px;
     height: 30px;
     position: absolute;
-    top: calc( 50% - 15px);
+    top: calc(50% - 15px);
     left: -15px;
     border-radius: 50%;
     cursor: pointer;
@@ -3609,7 +3610,7 @@ option:disabled {
     justify-content: center;
 }
 
-.uploadAvatar input:hover + label {
+.uploadAvatar input:hover+label {
     background: #E8479F;
 }
 
@@ -3624,7 +3625,7 @@ option:disabled {
     padding-top: 30px;
 }
 
-.profileTab , 
+.profileTab,
 .profileLogout a {
     color: #6B6B6B;
     font-size: 14px;
@@ -3635,15 +3636,15 @@ option:disabled {
     border-bottom: 1px solid #F6F6F6;
 }
 
+.profileTab:hover,
+.profileLogout a:hover {
+    color: #FFAD1F;
+}
+
 .profileTab.active {
     background: #FFAD1F;
     color: #fff;
     border-radius: 9px;
-}
-
-.profileTab:hover ,
-.profileLogout a:hover {
-    color: #FFAD1F;
 }
 
 .profileLogout a {
@@ -3654,9 +3655,345 @@ option:disabled {
     padding: 30px;
 }
 
+.ProfileTabContent {
+    padding: 30px 30px 0;
+    border: 1px solid #EEEEEE;
+    margin: 15px 0;
+}
+
+.profileProgess {
+    padding: 15px;
+    border: 1px solid #EEEEEE;
+    margin: 15px 0;
+}
+
+.profilePrgressHead {
+    background: #FCFCFC 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+}
+
+.profilePrgressHead>* {
+    color: #404040;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 30px;
+}
+
+.profilePrgressHead>*:first-of-type {
+    width: 50%;
+}
+
+.profilePrgressHead>*:last-of-type {
+    width: 40%;
+}
+
+.progressItem {
+    padding: 12px 0;
+    border-bottom: 1px solid #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progressItem:last-of-type {
+    border: 0;
+}
+
+.progressItem>*:first-of-type {
+    width: 50%;
+}
+
+.progressItem>*:last-of-type {
+    width: 40%;
+}
+
+.progressTitle {
+    color: #929292;
+    font-size: 13px;
+    line-height: 38px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.progressBox span {
+    color: #929292;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.progress {
+    width: 100%;
+    max-width: 255px;
+    height: 8px;
+    background: #F6F6F6;
+    border-radius: 4px;
+}
+
+.progress-bar {
+    -webkit-transition: width 5s ease;
+    transition: width 5s ease;
+}
+
+.progress1 .progress-bar {
+    background: #FF1F1F;
+}
+
+.progress2 .progress-bar {
+    background: #FFAD1F;
+}
+
+.progress3 .progress-bar {
+    background: #F8FF1F;
+}
+
+.progress4 .progress-bar {
+    background: #1F89C5;
+}
+
+.progress5 .progress-bar {
+    background: #5BFF1F;
+}
+
+.progress6 .progress-bar {
+    background: #3A901B;
+}
+
+.studentProfile .row {
+    margin: 0 -15px;
+}
+
+.studentProfile .col-12 {
+    padding: 0 15px;
+}
+
+@media screen and (max-width:575px) {
+
+    .progressItem>*:first-of-type,
+    .progressItem>*:last-of-type {
+        width: 100%;
+    }
+
+    .progressItem {
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .studentProfile {
+        margin: 15px 0;
+    }
+}
+
 @media screen and (max-width:768px) {
     .profileTabsContent .loginFormBox {
         padding: 20px 15px;
+    }
+
+    .profileBox {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .profileTabs {
+        padding: 0;
+    }
+
+    .ProfileTabContent {
+        padding: 10px 10px 0;
+    }
+
+    .profileProgess {
+        padding: 10px;
+    }
+
+    .profilePrgressHead>* {
+        font-size: 12px;
+    }
+
+    .progressTitle {
+        font-size: 11px;
+    }
+
+    .progressBox {
+        display: flex;
+        align-items: center;
+    }
+
+    .progressBox span {
+        margin-left: 10px;
+    }
+
+    .progress {
+        height: 5px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .ProfileTabContent {
+        margin: 0;
+        padding: 10px 15px;
+    }
+
+    .ProfileTabContent .courseCount::after {
+        margin: 0 5px;
+    }
+
+    .profileProgess {
+        margin: 0;
+    }
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||         About Page        ||========================*/
+/*==========================||---------------------------||========================*/
+
+.aboutPageVector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 0 15px;
+}
+
+.aboutPageVector img {
+    width: 600px;
+}
+
+.mainTitle {
+    color: #FFAD1F;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+}
+
+.mainTitle::before {
+    content: '';
+    width: 33px;
+    height: 1px;
+    background: #FFAD1F;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 2px;
+}
+
+.aboutContent h2 {
+    color: #202020;
+    font-size: 44px;
+    line-height: 77px;
+}
+
+.aboutContent p {
+    color: #929292;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.aboutBlocks {
+    padding: 20px 0;
+}
+
+.aboutBlock {
+    margin: 15px 0;
+    box-shadow: 0px 0px 31px #E9E9E930;
+    border: 1px solid #F3F3F3;
+    border-radius: 5px;
+    padding: 30px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.aboutBlock:hover {
+    transform: translateY(-10px);
+}
+
+.aboutBlockIcon {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(255, 173, 31, 0.1);
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.aboutBlock h3 {
+    color: #484848;
+    font-size: 20px;
+    line-height: 40px;
+    transition: all .3s ease-in-out;
+}
+
+.aboutBlock:hover h3 {
+    color: #FFAD1F;
+}
+
+.aboutBlock p {
+    color: #929292;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+}
+
+@media screen and (max-width:768px) {
+    .aboutContent h2 {
+        font-size: 20px;
+        line-height: 45px;
+    }
+
+    .aboutContent p {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .aboutBlock {
+        margin: 0 0 15px 0;
+        padding: 10px;
+    }
+
+    .aboutBlockIcon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+
+    .aboutBlock h3 {
+        font-size: 17px;
+        margin: 0;
+    }
+}
+
+@media (min-width:1024px) {
+    .pageVectors {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .pageVectors::before {
+        content: url('../images/shape4.png');
+        position: absolute;
+        top: 300px;
+        right: -35px;
+        z-index: 0;
+    }
+
+    .pageVectors::after {
+        content: url('../images/shape2.png');
+        position: absolute;
+        top: 300px;
+        left: -20px;
+        z-index: 0;
     }
 }
 
@@ -3668,39 +4005,49 @@ option:disabled {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px 0;
+    padding: 30px 0;
     width: 100%;
 }
 
 .pagination a {
-    width: 35px;
-    height: 35px;
+    width: 34px;
+    height: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FCFCFC;
-    color: #8A8A8A;
-    font-weight: 600;
+    color: #707070;
+    font-weight: normal;
     margin: 8px;
     font-size: 15px;
     transition: all .4s ease-in-out;
 }
 
 .pagination a:hover {
-    background: #fff;
     box-shadow: 0px 20px 15px #E0ECF6;
 }
 
 .pagination a:first-of-type,
 .pagination a:last-of-type {
-    color: #FFAD1F;
+    background: #EBEBEB;
+    border-radius: 7px;
 }
 
 .pagination a:first-of-type:hover,
 .pagination a:last-of-type:hover {
     background: #FFAD1F;
     color: #fff;
-    box-shadow: none;
+}
+
+.pagination .active {
+    color: #FFAD1F;
+}
+
+hr {
+    border-top-color: #EBEBEB;
+}
+
+.pt0 {
+    padding-top: 0;
 }
 
 @media screen and (max-width:575px) {
@@ -3708,6 +4055,477 @@ option:disabled {
         margin: 3px;
     }
 }
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Blog          ||========================*/
+/*==========================||---------------------------||========================*/
+
+.blogPageBox {
+    border: 1px solid #EBEBEB;
+    border-radius: 19px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.blogHead img {
+    width: 100%;
+    min-height: 150px;
+}
+
+.blogContent .blogDate {
+    top: 40px;
+    right: 55px;
+}
+
+.blogContent p {
+    color: #929292;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 10px 0;
+}
+
+.blogContent h3 {
+    color: #1C1C1C;
+    font-size: 25px;
+    line-height: 44px;
+}
+
+.infoBox {
+    padding: 0 15px 0 0;
+    border-right: 5px solid #FFAD1F;
+    margin: 20px 0;
+}
+
+.infoBox h4 {
+    color: #1C1C1C;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.blogPageBoxHead {
+    color: #565656;
+    font-size: 22px;
+    line-height: 44px;
+    font-weight: 500;
+    border-bottom: 1px solid #ECECEC;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.blogComments .comment {
+    padding: 15px 0;
+}
+
+.blogComments .addCommentWrapper {
+    padding: 20px 0 0 0;
+}
+
+.relatedBlog {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+.relatedBlog:last-of-type {
+    margin: 0;
+}
+
+.relatedBlogPic {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+}
+
+.relatedBlogPic img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.relatedBlogContent {
+    width: calc(100% - 100px);
+}
+
+.relatedBlog .blogCounts {
+    padding: 0 0 5px 0;
+}
+
+.relatedBlog .blogCount span {
+    font-size: 12px;
+}
+
+.relatedBlog .blogCount img {
+    max-width: 11px;
+}
+
+.relatedBlog .blogCount::after {
+    height: 10px;
+}
+
+.relatedBlog h3 {
+    color: #1C1C1C;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.relatedBlog p {
+    font-size: 10px;
+    line-height: 17px;
+    color: #6A6A6A;
+}
+
+.relatedBlog p a {
+    color: #FFAD1F;
+    margin-right: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .blogPageBox {
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .blogContent .blogDate {
+        top: 20px;
+        right: 35px;
+    }
+
+    .blogContent h3 {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .blogContent p {
+        font-size: 12px;
+        line-height: 22px;
+        margin: 0 0 10px 0;
+    }
+
+    .infoBox {
+        margin: 10px 0;
+        padding: 0 10px 0 0;
+        border-right-width: 3px;
+    }
+
+    .infoBox h4 {
+        font-size: 14px;
+        line-height: 25px;
+        margin: 0;
+    }
+
+    .blogPageBoxHead {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .blogComments .comment {
+        padding: 10px 0;
+    }
+
+    .commentBody p {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .blogComments .addCommentWrapper {
+        padding: 0;
+    }
+
+    .addRate {
+        font-size: 13px;
+    }
+
+    .relatedBlog {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .relatedBlog:last-of-type {
+        margin: 0;
+    }
+
+    .relatedBlogPic {
+        width: 50px;
+        height: 50px;
+    }
+
+    .relatedBlogContent {
+        width: calc(100% - 55px);
+    }
+
+    .relatedBlog h3 {
+        font-size: 12px;
+    }
+
+    .relatedBlog .blogCounts {
+        padding: 5px 0 0 0;
+    }
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||       contact Page        ||========================*/
+/*==========================||---------------------------||========================*/
+
+.contactBlocks {
+    max-width: 800px;
+    margin: auto;
+}
+
+.contactBlocks .col-12:nth-child(2) {
+    position: relative;
+}
+
+.contactBlocks .col-12:nth-child(2)::before,
+.contactBlocks .col-12:nth-child(2)::after {
+    content: '';
+    height: 45px;
+    background: #DBDBDB;
+    width: 2px;
+    position: absolute;
+    top: 40%;
+}
+
+.contactBlocks .col-12:nth-child(2)::before {
+    right: 0;
+}
+
+.contactBlocks .col-12:nth-child(2)::after {
+    left: 1px;
+}
+
+.contactBlock {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contactBlockIcon {
+    background: #E8479F;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.contactBlock h3 {
+    color: #6B6B6B;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.contactBlock p,
+.contactBlock p a {
+    font-size: 14px;
+    color: #6B6B6B;
+}
+
+.contactBlock p a:hover {
+    color: #FFAD1F;
+}
+
+.contactMap {
+    margin: 20px 0 40px;
+}
+
+.contactMap .map {
+    height: 400px;
+}
+
+.contactPageWrapper {
+    background: url(../images/contactBg2.png) no-repeat;
+    background-size: cover;
+}
+
+.contactPageWrapper .form-control {
+    background: #FBFBFB;
+}
+
+.contactPageWrapper {
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width:575px) {
+
+    .contactBlocks .col-12:nth-child(2)::before,
+    .contactBlocks .col-12:nth-child(2)::after {
+        display: none;
+    }
+
+    .contactBlock {
+        border-bottom: 1px solid #f8f9fa;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contactBlock {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contactBlockIcon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .contactBlock h3 {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .contactMap {
+        margin: 0 0 20px;
+    }
+
+    .contactMap .map {
+        height: 250px;
+    }
+
+    .contactPage {
+        padding-bottom: 10px;
+    }
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||            Courses        ||========================*/
+/*==========================||---------------------------||========================*/
+
+.coursesPage .coursesCats {
+    padding: 30px 5px;
+}
+
+.coursesPage .courseCat {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: initial;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.active .courseCat1 {
+    border-color: #FF8B6F;
+}
+
+.active .courseCat2 {
+    border-color: #54C9A4;
+}
+
+.active .courseCat3 {
+    border-color: #E8479F;
+}
+
+.active .courseCat4 {
+    border-color: #FFAD1F;
+}
+
+.active .courseCat .icon::after {
+    left: 0;
+}
+
+.coursesPage .courseCat .icon {
+    margin: 0 0 0 15px;
+}
+
+.coursesPage .courseCat h3 {
+    font-size: 15px;
+}
+
+.coursesPage .courseCat h5 {
+    font-size: 13px;
+}
+
+.coursesList {
+    margin: 30px 0;
+}
+
+@media screen and (max-width:768px) {
+    .coursesPage .coursesCats {
+        padding: 0;
+    }
+
+    .coursesPage .courseCat h3 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .coursesPage .courseCat {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .coursesPage .courseCat .icon {
+        margin: 0px 0 5px;
+    }
+    
+    .coursesPage .courseCat h3 {
+        margin: 0;
+    }
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||         Pagination        ||========================*/
+/*==========================||---------------------------||========================*/
+
+@media screen and (max-width:768px) {}
+
+/*==========================||---------------------------||========================*/
+/*==========================||         Pagination        ||========================*/
+/*==========================||---------------------------||========================*/
+
+@media screen and (max-width:768px) {}
+
+/*==========================||---------------------------||========================*/
+/*==========================||         Pagination        ||========================*/
+/*==========================||---------------------------||========================*/
+
+@media screen and (max-width:768px) {}
+
+/*==========================||---------------------------||========================*/
+/*==========================||         Pagination        ||========================*/
+/*==========================||---------------------------||========================*/
+
+@media screen and (max-width:768px) {}
+
+/*==========================||---------------------------||========================*/
+/*==========================||         Pagination        ||========================*/
+/*==========================||---------------------------||========================*/
+
+@media screen and (max-width:768px) {}
+
+/*==========================||---------------------------||========================*/
+/*==========================||         Pagination        ||========================*/
+/*==========================||---------------------------||========================*/
+
+@media screen and (max-width:768px) {}
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||         Pagination        ||========================*/
+/*==========================||---------------------------||========================*/
+
+/*==========================||---------------------------||========================*/
+/*==========================||         Pagination        ||========================*/
+/*==========================||---------------------------||========================*/
+
+/*==========================||---------------------------||========================*/
+/*==========================||         Pagination        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+
 
 /*==========================||---------------------------||========================*/
 /*==========================||        Text Wrapper       ||========================*/

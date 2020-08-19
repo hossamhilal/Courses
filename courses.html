@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="plugins/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/animation/animate.min.css">
+    <link rel="stylesheet" href="plugins/jqueryUi/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="images/xIcon.png" type="image/x-icon" />
+    <title> البراعة للقدرات </title>
+</head>
+
+<body>
+
+
+    <!-- HEADER  -->
+    <div class="header internalHeader">
+        <div class="container">
+
+            <!-- Header box -->
+            <div class="headerBox">
+                <div class="logo">
+                    <a href="index.html"> <img src="images/logo.png" alt="logo" class="img-fluid"> </a>
+                </div>
+
+                <!-- Nav Menu  -->
+                <div class="navMenu">
+                    <ul>
+                        <li> <a href="banks.html">  الحسابات البنكية </a> </li>
+                        <li> <a href="courses.html">   الدورات الحالية </a> </li>
+                        <li> <a href="faq.html"> الاسئلة الشائعة </a> </li>
+                        <li> <a href="results.html"> درجات الطلاب  </a> </li>
+                        <li> <a href="opinions.html"> آراء الطلاب </a> </li>  
+                        <li> <a href="contact.html"> تواصل معنا </a> </li>  
+                    </ul>
+                </div>
+                
+                <div class="leftSide">                    
+                    <!-- Searh  -->
+                    <div class="search">                   
+                        <div class="openSearch btnGrey"> <i class="icofont-search"></i> </div>
+                        <div class="searchPopup"> 
+                            <div class="close"> <i class="icofont-close-line"></i> </div>
+                            <div class="searchForm"> 
+                                <form action="">
+                                    <div class="searchBox">
+                                        <input type="text" placeholder="ابحث هنا ">
+                                        <button type="submit" class="btnGrey"> <i class="icofont-search"></i>  </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <!-- Before Login  -->
+                    <!-- <div class="loginActions">
+                        <a href="login.html" class="btnBlue"> تسجيل دخول </a>
+                        <a href="signUp.html" class="btnBlue"> تسجيل جديد </a>
+                    </div> 
+                    <div class="loginMobile dropToggle">
+                        <div class="loginMobileIcon"> <img src="images/icon-user-mob.png" alt="icon" class="img-fluid"> </div>
+                        <div class="userList dropList">
+                            <a href="login.html"> تسجيل دخول </a>
+                            <a href="signUp.html"> تسجيل جديد </a>
+                        </div>
+                    </div> -->
+                    
+                    <!-- After Login  -->
+                    <div class="user dropToggle">
+                        <div class="userIcon"> <img src="images/user1.png" alt="icon" class="img-fluid"> </div>
+                        <div class="userText"> مرحبا بك حسام هلال </div>
+                        <i class="icofont-simple-down"></i>
+                        <div class="userList dropList">
+                            <a href="profile.html"> <img src="images/icon-profile.svg" alt="ion"> الملف الشخصى </a>
+                            <a href="index.html"><img src="images/icon-logout.svg" alt="ion"> تسجيل الخروج </a>
+                        </div> 
+                    </div>   
+
+                    <!-- Mobile  -->
+                    <div class="mobile">
+                        <div class="menuBtn"> <span></span> <span></span> <span></span> </div>
+                        <div class="navOverlay"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page info -->
+            <div class="pageInfo">
+                <h1> الدورات </h1>
+                <div class="bradCrumbBox"> 
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"> <a href="index.html"> الرئيسية </a> </li>
+                        <li class="breadcrumb-item active" aria-current="page"> الدورات </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SignUp Users   -->
+    <div class="coursesPage secPadding">
+        <div class="container">
+            <!-- COURSES CATS   -->
+            <div class="coursesCats wow fadeInUp">
+                <div class="row">
+                    <!-- Course Cat -->
+                    <a class="col-12 col-sm-4 col-md-3 courseCatTab active" href="#tab1">
+                        <div class="courseCat courseCat1">
+                            <div class="icon"> <img src="images/icon-brain.png" alt="icon" class="img-fluid"> </div>
+                            <div class="courseCatData">
+                                <h3> دورات قدرة معرفية </h3>
+                                <h5> 15 دورة </h5>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Course Cat -->
+                    <a class="col-12 col-sm-4 col-md-3 courseCatTab" href="#tab2">
+                        <div class="courseCat courseCat2">
+                            <div class="icon"> <img src="images/icon-brain.png" alt="icon" class="img-fluid"> </div>
+                            <div class="courseCatData">
+                                <h3> دورات تحصيلية </h3>
+                                <h5> 15 دورة </h5>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Course Cat -->
+                    <a class="col-12 col-sm-4 col-md-3 courseCatTab" href="#tab3">
+                        <div class="courseCat courseCat3">
+                            <div class="icon"> <img src="images/icon-brain.png" alt="icon" class="img-fluid"> </div>
+                            <div class="courseCatData">
+                                <h3> دورات كفايات عام </h3>
+                                <h5> 15 دورة </h5>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Course Cat -->
+                    <a class="col-12 col-sm-4 col-md-3 courseCatTab" href="#tab4">
+                        <div class="courseCat courseCat4">
+                            <div class="icon"> <img src="images/icon-brain.png" alt="icon" class="img-fluid"> </div>
+                            <div class="courseCatData">
+                                <h3> دورات قدرات جامعين </h3>
+                                <h5> 15 دورة </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="coursesList tabsContent wow fadeInUp">
+                <div class="tabContent show" id="tab1"> 
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course1.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course2.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course3.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course3.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course2.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course1.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course2.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course3.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course2.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabContent" id="tab2"> 
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course2.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course3.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course3.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course2.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course1.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabContent" id="tab3"> 
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course1.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course2.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course3.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabContent" id="tab4"> 
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course2.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course3.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course3.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course2.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course1.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <!-- Course -->
+                            <div class="course">
+                                <div class="coursePic"> <img src="images/course1.png" alt="icon" class="img-fluid"> </div>
+                                <div class="courseBody">
+                                    <div class="courseTrainer"> 
+                                        <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                        <label> بواسطة : </label>
+                                        <a href="trainer.html">  جود أحمد </a>
+                                    </div>
+                                    <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                    <div class="courseCounts">
+                                        <div class="courseCount">
+                                            <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                            <h5> 20 اسبوع </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                            <h5> 20 طالب </h5>
+                                        </div>
+                                        <div class="courseCount">
+                                            <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                            <h5> 20 درس </h5>
+                                        </div>
+                                    </div>
+                                    <div class="courseFooter">
+                                        <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-5 col-md-4 col-lg-4 wow fadeInUp">
+                    <div class="logo">
+                        <a href="index.html"> <img src="images/logo.png" alt="logo" class="img-fluid"> </a>
+                    </div>
+                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-5 wow fadeInUp">
+                    <div class="footerBlocks">
+                        <div class="footerBlock">
+                            <h3> روابط سريعة </h3>
+                            <div class="list">
+                                <a href="banks.html"><i class="icofont-thin-double-left"></i>  الحسابات البنكية </a>
+                                <a href="courses.html"><i class="icofont-thin-double-left"></i>   الدورات الحالية </a> 
+                                <a href="faq.html"><i class="icofont-thin-double-left"></i> الاسئلة الشائعة </a> 
+                                <a href="opinions.html"><i class="icofont-thin-double-left"></i> آراء الطلاب </a>
+                            </div>
+                        </div>
+                        <div class="footerBlock">
+                            <h3> روابط سريعة </h3>
+                            <div class="list">
+                                <a href="blogs.html"><i class="icofont-thin-double-left"></i> المدونة </a>
+                                <a href="about.html"><i class="icofont-thin-double-left"></i>  من نحن  </a>
+                                <a href="policy.html"><i class="icofont-thin-double-left"></i> شروط الاستخدام </a>
+                                <a href="results.html"><i class="icofont-thin-double-left"></i> درجات الطلاب  </a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 col-md-4 col-lg-3 wow fadeInUp">
+                    <h3> المزادات </h3>
+                    <p> <img src="images/icon-pin.png" alt="icon">  الرياض , السعودية</p>
+                    <p> <img src="images/icon-phone.png" alt="icon"> +966549782553 </p>
+                    <p> <img src="images/icon-mail.png" alt="icon"> info@name.com.sa </p>
+                    <div class="social">    
+                        <a href="#" class="google"> <i class="icofont-google-plus"></i> </a>
+                        <a href="#" class="twitter"> <i class="icofont-twitter"></i> </a>
+                        <a href="#" class="facebook"> <i class="icofont-facebook"></i> </a>
+                        <a href="#" class="youtube"> <i class="icofont-youtube-play"></i> </a>
+                    </div> 
+                </div>
+                <div class="col-12">
+                    <!-- Copyright  -->
+                    <div class="copyright wow fadeInUp">
+                        <p> جميع الحقوق محفوظة لموقع  <a href="#"> البراعة </a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/owlCarousel/owl.carousel.min.js"></script>
+    <script src="plugins/animation/wow.min.js"></script>
+    <script src="plugins/jqueryUi/jquery-ui.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

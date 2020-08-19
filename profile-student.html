@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="plugins/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/animation/animate.min.css">
+    <link rel="stylesheet" href="plugins/jqueryUi/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="images/xIcon.png" type="image/x-icon" />
+    <title> البراعة للقدرات </title>
+</head>
+
+<body>
+
+
+    <!-- HEADER  -->
+    <div class="header internalHeader">
+        <div class="container">
+
+            <!-- Header box -->
+            <div class="headerBox">
+                <div class="logo">
+                    <a href="index.html"> <img src="images/logo.png" alt="logo" class="img-fluid"> </a>
+                </div>
+
+                <!-- Nav Menu  -->
+                <div class="navMenu">
+                    <ul>
+                        <li> <a href="banks.html">  الحسابات البنكية </a> </li>
+                        <li> <a href="courses.html">   الدورات الحالية </a> </li>
+                        <li> <a href="faq.html"> الاسئلة الشائعة </a> </li>
+                        <li> <a href="results.html"> درجات الطلاب  </a> </li>
+                        <li> <a href="opinions.html"> آراء الطلاب </a> </li>  
+                        <li> <a href="contact.html"> تواصل معنا </a> </li>  
+                    </ul>
+                </div>
+                
+                <div class="leftSide">                    
+                    <!-- Searh  -->
+                    <div class="search">                   
+                        <div class="openSearch btnGrey"> <i class="icofont-search"></i> </div>
+                        <div class="searchPopup"> 
+                            <div class="close"> <i class="icofont-close-line"></i> </div>
+                            <div class="searchForm"> 
+                                <form action="">
+                                    <div class="searchBox">
+                                        <input type="text" placeholder="ابحث هنا ">
+                                        <button type="submit" class="btnGrey"> <i class="icofont-search"></i>  </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>  
+                    
+                    <!-- After Login  -->
+                    <div class="user dropToggle">
+                        <div class="userIcon"> <img src="images/user1.png" alt="icon" class="img-fluid"> </div>
+                        <div class="userText"> مرحبا بك حسام هلال </div>
+                        <i class="icofont-simple-down"></i>
+                        <div class="userList dropList">
+                            <a href="profile-trainer.html"> <img src="images/icon-profile.svg" alt="ion"> الملف الشخصى </a>
+                            <a href="index.html"><img src="images/icon-logout.svg" alt="ion"> تسجيل الخروج </a>
+                        </div> 
+                    </div>   
+
+                    <!-- Mobile  -->
+                    <div class="mobile">
+                        <div class="menuBtn"> <span></span> <span></span> <span></span> </div>
+                        <div class="navOverlay"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page info -->
+            <div class="pageInfo">
+                <h1> الملف الشخصى</h1>
+                <div class="bradCrumbBox"> 
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"> <a href="index.html"> الرئيسية </a> </li>
+                        <li class="breadcrumb-item active" aria-current="page"> الملف الشخصى </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Page  -->
+    <div class="profilePage secPadding">
+        <div class="container">
+           <div class="row">
+               <div class="col-12 col-sm-4 wow fadeInUp">
+                    <div class="profileBox">
+                        <div class="profileAvatar">
+                            <div class="profileAvatarPreview"> <img src="images/avatar.jpg" alt="avatar" class="img-fluid"></div>
+                            <div class="uploadAvatar">
+                                <input type="file" accept="image/*">
+                                <label> <img src="images/icon-camera.png" alt="upload" class="img-fluid"> </label>
+                            </div>
+                        </div>
+
+                        <h2> حسام سعد هلال </h2>
+                        <div class="profileTabs">
+                            <a href="#tab1" class="profileTab active"> دوراتى </a>
+                            <a href="#tab2" class="profileTab progressTab"> معدل الانجاز </a>
+                            <a href="#tab3" class="profileTab"> تعديل حسابى </a>
+                            <a href="#tab4" class="profileTab"> تغيير كلمة المرور </a> 
+                        </div>
+                        <div class="profileLogout">
+                            <a href="index.html"> تسجيل الخروج </a>
+                        </div>
+                    </div>
+               </div>
+               <div class="col-12 col-sm-8 wow fadeInUp">
+                    <div class="tabsContent profileTabsContent">
+                        <div class="tabContent show" id="tab1">
+                            <div class="ProfileTabContent">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <!-- Course -->
+                                        <div class="course">
+                                            <div class="coursePic"> <img src="images/course1.png" alt="icon" class="img-fluid"> </div>
+                                            <div class="courseBody">
+                                                <div class="courseTrainer"> 
+                                                    <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                                    <label> بواسطة : </label>
+                                                    <a href="trainer.html">  جود أحمد </a>
+                                                </div>
+                                                <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                                <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                                <div class="courseCounts">
+                                                    <div class="courseCount">
+                                                        <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                                        <h5> 20 اسبوع </h5>
+                                                    </div>
+                                                    <div class="courseCount">
+                                                        <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                                        <h5> 20 طالب </h5>
+                                                    </div>
+                                                    <div class="courseCount">
+                                                        <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                                        <h5> 20 درس </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="courseFooter">
+                                                    <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <!-- Course -->
+                                        <div class="course">
+                                            <div class="coursePic"> <img src="images/course2.png" alt="icon" class="img-fluid"> </div>
+                                            <div class="courseBody">
+                                                <div class="courseTrainer"> 
+                                                    <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                                    <label> بواسطة : </label>
+                                                    <a href="trainer.html">  جود أحمد </a>
+                                                </div>
+                                                <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                                <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                                <div class="courseCounts">
+                                                    <div class="courseCount">
+                                                        <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                                        <h5> 20 اسبوع </h5>
+                                                    </div>
+                                                    <div class="courseCount">
+                                                        <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                                        <h5> 20 طالب </h5>
+                                                    </div>
+                                                    <div class="courseCount">
+                                                        <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                                        <h5> 20 درس </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="courseFooter">
+                                                    <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <!-- Course -->
+                                        <div class="course">
+                                            <div class="coursePic"> <img src="images/course3.png" alt="icon" class="img-fluid"> </div>
+                                            <div class="courseBody">
+                                                <div class="courseTrainer"> 
+                                                    <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                                    <label> بواسطة : </label>
+                                                    <a href="trainer.html">  جود أحمد </a>
+                                                </div>
+                                                <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                                <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                                <div class="courseCounts">
+                                                    <div class="courseCount">
+                                                        <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                                        <h5> 20 اسبوع </h5>
+                                                    </div>
+                                                    <div class="courseCount">
+                                                        <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                                        <h5> 20 طالب </h5>
+                                                    </div>
+                                                    <div class="courseCount">
+                                                        <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                                        <h5> 20 درس </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="courseFooter">
+                                                    <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <!-- Course -->
+                                        <div class="course">
+                                            <div class="coursePic"> <img src="images/course2.png" alt="icon" class="img-fluid"> </div>
+                                            <div class="courseBody">
+                                                <div class="courseTrainer"> 
+                                                    <div class="courseTrainerAvatar"> <img src="images/userSm2.png" alt="icon" class="img-fluid"> </div>
+                                                    <label> بواسطة : </label>
+                                                    <a href="trainer.html">  جود أحمد </a>
+                                                </div>
+                                                <h2> دورة تعليمية لتعليم برمجه الجوال  </h2>
+                                                <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                                                <div class="courseCounts">
+                                                    <div class="courseCount">
+                                                        <img src="images/icon-calender.png" alt="icon" class="img-fluid">
+                                                        <h5> 20 اسبوع </h5>
+                                                    </div>
+                                                    <div class="courseCount">
+                                                        <img src="images/icon-student.png" alt="icon" class="img-fluid">
+                                                        <h5> 20 طالب </h5>
+                                                    </div>
+                                                    <div class="courseCount">
+                                                        <img src="images/icon-sm-book.png" alt="icon" class="img-fluid">
+                                                        <h5> 20 درس </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="courseFooter">
+                                                    <a href="course.html" class="btnGrey"> إظهار المزيد <img src="images/icon-arrow.svg" alt="icon"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabContent" id="tab2">
+                            <div class="profileProgess">
+                                <div class="profilePrgressHead">
+                                    <label> اسم الدورة </label>
+                                    <label> معدل الانجاز </label>
+                                </div>
+                                <div class="progreeList">
+                                    <div class="progressItem">
+                                        <div class="progressTitle"> يتم كتابة اسم المحاضرة </div>
+                                        <div class="progressBox"> 
+                                            <span> %40 </span>
+                                            <div class="progress progress2">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progressItem">
+                                        <div class="progressTitle"> يتم كتابة اسم المحاضرة </div>
+                                        <div class="progressBox"> 
+                                            <span> %20 </span>
+                                            <div class="progress progress1">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progressItem">
+                                        <div class="progressTitle"> يتم كتابة اسم المحاضرة </div>
+                                        <div class="progressBox"> 
+                                            <span> %60 </span>
+                                            <div class="progress progress3">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progressItem">
+                                        <div class="progressTitle"> يتم كتابة اسم المحاضرة </div>
+                                        <div class="progressBox"> 
+                                            <span> %80 </span>
+                                            <div class="progress progress4">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progressItem">
+                                        <div class="progressTitle"> يتم كتابة اسم المحاضرة </div>
+                                        <div class="progressBox"> 
+                                            <span> %95 </span>
+                                            <div class="progress progress5">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progressItem">
+                                        <div class="progressTitle"> يتم كتابة اسم المحاضرة </div>
+                                        <div class="progressBox"> 
+                                            <span> %100 </span>
+                                            <div class="progress progress6">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabContent" id="tab3">
+                            <div class="loginBox studentProfile">
+                                <form action="">
+                                    <div class="loginFormBox">
+                                        <div class="loginFormBody">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="field fieldIcon">
+                                                        <label> الاسم الاول </label>
+                                                        <input type="text" class="form-control" value="حسام " disabled>
+                                                        <span class="editField"> <img src="images/icon-edit.png" alt="icon" class="img-fluid"> </span>
+                                                    </div>                                                   
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="field fieldIcon">
+                                                        <label> الاسم الاخير</label>
+                                                        <input type="text" class="form-control" value="هلال" disabled>
+                                                        <span class="editField"> <img src="images/icon-edit.png" alt="icon" class="img-fluid"> </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field fieldIcon">
+                                                <label> اسم المستخدم </label>
+                                                <input type="text" class="form-control" value="حسام هلال" disabled>
+                                                <span class="editField"> <img src="images/icon-edit.png" alt="icon" class="img-fluid"> </span>
+                                            </div>
+                                            <div class="field fieldIcon">
+                                                <label> البريد الالكترونى </label>
+                                                <input type="email" class="form-control" value="hossam.hilal0@gmail.com" disabled>
+                                                <span class="editField"> <img src="images/icon-edit.png" alt="icon" class="img-fluid"> </span>
+                                            </div>
+                                            <div class="field fieldIcon">
+                                                <label> رقم الجوال </label>
+                                                <input type="text" class="form-control" value="+966549782553" disabled>
+                                                <span class="editField"> <img src="images/icon-edit.png" alt="icon" class="img-fluid"> </span>
+                                            </div>
+                                            <div class="field fieldIcon">
+                                                <label> رقم جوال ولى الامر </label>
+                                                <input type="text" class="form-control" value="+966549782553" disabled>
+                                                <span class="editField"> <img src="images/icon-edit.png" alt="icon" class="img-fluid"> </span>
+                                            </div>
+                                            <div class="field fieldIcon">
+                                                <label> البريد الالكترونى لولى الامر </label>
+                                                <input type="email" class="form-control" value="hossam.hilal0@gmail.com" disabled>
+                                                <span class="editField"> <img src="images/icon-edit.png" alt="icon" class="img-fluid"> </span>
+                                            </div>
+                                            <button type="submit" class="btnOrange"> حفظ التعديلات </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tabContent" id="tab4">
+                            <div class="loginBox studentProfile">
+                                <form action="">
+                                    <div class="loginFormBox">
+                                        <div class="loginFormBody">
+                                            <div class="field fieldIcon">
+                                                <label> كلمة المرور القديمة </label>
+                                                <input type="password" class="form-control" placeholder="برجاء ادخال كلمة المرور القديمة">
+                                                <span class="showPassword"> <i class="icofont-eye"></i> </span>
+                                            </div>
+                                            <div class="field fieldIcon">
+                                                <label> كلمة المرور الجديدة </label>
+                                                <input type="password" class="form-control" placeholder="برجاء ادخال كلمة المرور الجديدة">
+                                                <span class="showPassword"> <i class="icofont-eye"></i> </span>
+                                            </div>
+                                            <div class="field fieldIcon">
+                                                <label> تأكيد كلمة المرور الجديدة </label>
+                                                <input type="text" class="form-control" placeholder="برجاء ادخال كلمة المرور الجديدة">
+                                                <span class="showPassword"> <i class="icofont-eye"></i> </span>
+                                            </div>
+                                            <button type="submit" class="btnOrange"> حفظ التعديلات </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+        </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-5 col-md-4 col-lg-4 wow fadeInUp">
+                    <div class="logo">
+                        <a href="index.html"> <img src="images/logo.png" alt="logo" class="img-fluid"> </a>
+                    </div>
+                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-5 wow fadeInUp">
+                    <div class="footerBlocks">
+                        <div class="footerBlock">
+                            <h3> روابط سريعة </h3>
+                            <div class="list">
+                                <a href="banks.html"><i class="icofont-thin-double-left"></i>  الحسابات البنكية </a>
+                                <a href="courses.html"><i class="icofont-thin-double-left"></i>   الدورات الحالية </a> 
+                                <a href="faq.html"><i class="icofont-thin-double-left"></i> الاسئلة الشائعة </a> 
+                                <a href="opinions.html"><i class="icofont-thin-double-left"></i> آراء الطلاب </a>
+                            </div>
+                        </div>
+                        <div class="footerBlock">
+                            <h3> روابط سريعة </h3>
+                            <div class="list">
+                                <a href="blogs.html"><i class="icofont-thin-double-left"></i> المدونة </a>
+                                <a href="about.html"><i class="icofont-thin-double-left"></i>  من نحن  </a>
+                                <a href="policy.html"><i class="icofont-thin-double-left"></i> شروط الاستخدام </a>
+                                <a href="results.html"><i class="icofont-thin-double-left"></i> درجات الطلاب  </a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 col-md-4 col-lg-3 wow fadeInUp">
+                    <h3> المزادات </h3>
+                    <p> <img src="images/icon-pin.png" alt="icon">  الرياض , السعودية</p>
+                    <p> <img src="images/icon-phone.png" alt="icon"> +966549782553 </p>
+                    <p> <img src="images/icon-mail.png" alt="icon"> info@name.com.sa </p>
+                    <div class="social">    
+                        <a href="#" class="google"> <i class="icofont-google-plus"></i> </a>
+                        <a href="#" class="twitter"> <i class="icofont-twitter"></i> </a>
+                        <a href="#" class="facebook"> <i class="icofont-facebook"></i> </a>
+                        <a href="#" class="youtube"> <i class="icofont-youtube-play"></i> </a>
+                    </div> 
+                </div>
+                <div class="col-12">
+                    <!-- Copyright  -->
+                    <div class="copyright wow fadeInUp">
+                        <p> جميع الحقوق محفوظة لموقع  <a href="#"> البراعة </a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/owlCarousel/owl.carousel.min.js"></script>
+    <script src="plugins/animation/wow.min.js"></script>
+    <script src="plugins/jqueryUi/jquery-ui.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
