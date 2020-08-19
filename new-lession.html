@@ -106,37 +106,37 @@
         </div>
     </div>
 
-    <!-- Login Page   -->
-    <div class="signUpPage secPadding">
+    <!-- Add Lesson Page   -->
+    <div class="signUpPage addLessonPage secPadding">
         <div class="container">
             <div class="loginBox">
-                <div class="col-12 col-sm-6">
-                    <form action="index-2.html">
-                        <div class="loginFormBox">
-                            <div class="loginFormHead">
-                                <h3> إضافة درس </h3>
-                                <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                <form action="index-2.html">
+                    <div class="loginFormBox">
+                        <div class="loginFormHead">
+                            <h3> إضافة درس </h3>
+                            <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+                        </div>
+                        <div class="loginFormBody">
+                            <div class="field">
+                                <label> النوع </label>
+                                <div class="customSelect"  id="lessonType">
+                                    <select class="form-control">
+                                        <option value="Lesson" selected> درس </option>
+                                        <option value="Test"> اختبار </option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="loginFormBody">
-                                <div class="field required">
-                                    <label> النوع </label>
-                                    <div class="customSelect"  id="lessonType">
-                                        <select class="form-control">
-                                            <option value="1" selected> درس </option>
-                                            <option value="2"> اختبار </option>
-                                        </select>
-                                    </div>
+                            <div class="field">
+                                <label> اسم المحاضرة </label>
+                                <div class="customSelect">
+                                    <select class="form-control">
+                                        <option value="1"> اسم المحاضرة </option>
+                                        <option value="2"> اسم المحاضرة </option>
+                                        <option value="3"> اسم المحاضرة </option>
+                                    </select>
                                 </div>
-                                <div class="field required">
-                                    <label> اسم المحاضرة </label>
-                                    <div class="customSelect">
-                                        <select class="form-control">
-                                            <option value="1"> اسم المحاضرة </option>
-                                            <option value="2"> اسم المحاضرة </option>
-                                            <option value="3"> اسم المحاضرة </option>
-                                        </select>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="addlessonBox">
                                 <div class="field">
                                     <label> اسم الدرس </label>
                                     <input type="text" class="form-control" placeholder="برجاء ادخال اسم الدرس">
@@ -145,11 +145,22 @@
                                     <label> لينك الفيديو </label>
                                     <input type="text" class="form-control" placeholder="برجاء ادخال لينك الفيديو">
                                 </div>
-                                <button type="submit" class="btnOrange"> إضافة درس </button>
                             </div>
+                            <div class="addQuestionBox">
+                                <div class="addQuestionBoxHead field">
+                                    <label> اضافة سؤال  </label>
+                                    <div class="addedForm">
+                                        <input type="text" class="form-control" placeholder="يتم كتابة السؤال">
+                                        <div class="addQuestion btnOpacity"> <i class="icofont-plus"></i> </div>
+                                    </div>
+                                </div>
+                                <div class="addedQuestions">
+                                </div>
+                            </div>
+                            <button type="submit" class="btnOrange"> إضافة درس </button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

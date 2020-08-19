@@ -219,6 +219,23 @@ textarea:active {
     color: #fff;
 }
 
+.btnOpacity {
+    color:  #FFAD1F;
+    background: rgba(255,173,31,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    border-radius: 6px;
+    transition: all .3s ease-in-out;
+}
+
+.btnOpacity:hover {
+    background: #FFAD1F;
+    color: #fff;
+}
+
 button:active,
 button:hover,
 button:focus {
@@ -2226,6 +2243,10 @@ option:disabled {
     color: #BFBFBF;
 }
 
+.customSelect option:hover {
+    background: #FFAD1F;
+}
+
 .signUpPolicy {
     padding: 35px 20px 30px;
 }
@@ -2393,7 +2414,7 @@ option:disabled {
     }
 
     .loginFormBox {
-        padding: 15px;
+        padding: 10px;
     }
 
     .loginFormHead h3 {
@@ -2408,8 +2429,23 @@ option:disabled {
         font-size: 12px;
     }
 
-    .loginBox .form-control {
-        height: 50px;
+    .loginBox .form-control ,
+    .loginBox .customSelect select.form-control:not([size]):not([multiple])  {
+        height: 40px;
+        border-radius: 0;
+        font-size: 12px;
+    }
+
+    .customSelect::after {
+        width: 6px;
+        height: 6px;
+        top: 16px;
+        left: 11px;
+    }
+
+    .fieldIcon span {
+        height: 40px;
+        font-size: 15px;
     }
 
     .loginBox .btnOrange {
@@ -3424,10 +3460,92 @@ option:disabled {
 }
 
 /*==========================||---------------------------||========================*/
-/*==========================||          Home Ads         ||========================*/
+/*==========================||   New Lesson - Question   ||========================*/
 /*==========================||---------------------------||========================*/
 
-@media screen and (max-width:768px) {}
+.addQuestionBox {
+    display: none;
+}
+
+.addedForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addedForm input {
+    width: calc( 100% - 69px );
+}
+
+.addedForm .btnOpacity {
+    width: 57px;
+    height: 50px;
+    margin-right: 12px;
+}
+
+.addedQuestion {
+    border: 1px solid #EEEEEE;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.answer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.questionTitle ,
+.answerContent {
+    width: calc( 100% - 69px );
+    background: #FBFBFB;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 12px;
+    color: #BFBFBF;
+    border-radius: 12px;
+}
+
+.deleteQuestion ,
+.answer .btnGrey {
+    width: 57px;
+    height: 50px;
+    margin-right: 12px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .addedForm .btnOpacity , 
+    .deleteQuestion , 
+    .answer .btnGrey {
+        width: 40px;
+        height: 40px;
+        font-size: 13px;
+        border-radius: 0;
+        margin-right: 5px;
+    }
+    
+    .addedForm input {
+        width: calc( 100% - 45px );
+    }
+    
+    .addedQuestion {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .questionTitle , 
+    .answerContent {
+        border-radius: 0;
+        width: calc( 100% - 45px );
+        padding: 0 5px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        height: auto;
+        word-break: break-word;
+    }
+}
 
 /*==========================||---------------------------||========================*/
 /*==========================||          Home Ads         ||========================*/

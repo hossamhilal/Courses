@@ -2,13 +2,20 @@
 (function($) {
     "use strict";
 
-    // $(window).on('load', function(){
-    //     $('body').addClass('stopScroll');
-    //     $('.loader').fadeOut(500, function () {
-    //         $(this).remove();
-    //         $('body').removeClass('stopScroll');
-    //     }); 
-    // });
+    $(window).on('load', function(){
+        // $('body').addClass('stopScroll');
+        // $('.loader').fadeOut(500, function () {
+        //     $(this).remove();
+        //     $('body').removeClass('stopScroll');
+        // }); 
+
+        // Adjust Textarea Height
+        var textArea = document.querySelectorAll('textarea[data-adaptheight]');
+        textArea.forEach(function(el) {
+            var innerHeight = $(textArea).prop('scrollHeight');
+            $(textArea).css('min-height' , innerHeight );
+        });
+    });
 
     // OPEN SIDE  MENU 
     $('.menuBtn').on('click', function(){
@@ -327,13 +334,85 @@
         }
     });
 
+    // Show Lesson Inputs Or Question Inputs 
+    $('#lessonType').change(function(){
+        $(this).find("option:selected").each(function(){
+            let optionValue = $(this).attr("value");
+            if(optionValue == 'Lesson'){
+                $('.addlessonBox').show();
+                $('.addQuestionBox').hide();
+            } else{
+                $('.addlessonBox').hide();
+                $('.addQuestionBox').show();
+            }
+        });
+    }).change();
 
-    // Adjust Textarea Height
-    var textArea = document.querySelectorAll('textarea[data-adaptheight]');
-    textArea.forEach(function(el) {
-        var innerHeight = $(textArea).prop('scrollHeight');
-        $(textArea).css('min-height' , innerHeight );
+    // Add Question 
+    $('.addQuestion').on('click' , function(){
+        let question = $(this).prev('input');
+        let questionTitle = $(question).val();
+        console.log('questionTitle' , questionTitle);
+
+        if ($(question).val()) {
+            let newQuestion =  '<div class="addedQuestion">' +
+                                    '<div class="addedQuestionHead field">' +
+                                        '<label> السؤال  </label>' +
+                                        '<div class="addedForm">' +
+                                            '<div class="questionTitle">' + questionTitle + '</div>' +
+                                            '<div class="deleteQuestion btnRed"> <i class="icofont-ui-delete"></i> </div>' +
+                                        '</div>' +
+                                    '</div>' +
+                                    '<div class="answers">' +
+                                        '<div class="answersHead field">' +
+                                            '<label> الاجابة  </label>' +
+                                            '<div class="addedForm">' +
+                                                '<input type="text" class="form-control" placeholder="يتم كتابة الاجابة">' +
+                                                '<div class="addAnswer btnOpacity"> <i class="icofont-plus"></i>  </div>' +
+                                            '</div>' +
+                                        '</div>' +
+                                        '<div class="answersBody"></div>' +
+                                    '</div>' +
+                                '</div>';
+            console.log(newQuestion);
+
+            let questions = $('.addedQuestions');
+            questions.append(newQuestion);
+            $(question).val('');
+        } 
     });
+
+    // Delete Question 
+    $(document).on('click', '.deleteQuestion' , function(){
+        $(this).parents('.addedQuestion').remove();
+    });
+
+    // Add Answer 
+    $(document).on('click', '.addAnswer' , function(){
+        let answer = $(this).prev('input');
+        let answerContent = $(answer).val();
+        console.log('answerContent' , answerContent);
+
+        if ($(answer).val()) {
+            let newAnswer =  '<div class="answer">' +
+                                '<div class="answerContent">' + answerContent + '</div>' +
+                                '<div class="deleteAnswer btnGrey"> <i class="icofont-close"></i> </div>' +
+                             '</div>'
+            console.log(newAnswer);
+
+            let answers = $(this).parents('.answersHead ').next('.answersBody');
+            answers.append(newAnswer);
+            $(answer).val('');
+        } 
+    });
+
+    // Delete Answer 
+    $(document).on('click', '.deleteAnswer' , function(){
+        $(this).parent('.answer').remove();
+    });
+
+    
+
 
 
     // Allow Edit Profile 
