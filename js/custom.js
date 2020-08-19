@@ -251,8 +251,8 @@
     });
 
     // Add Lecture 
-    $('.addLecture').on('click' , function(){
-        let input = $(this).prev('.addLetureForm').find('input');
+    $('.lecturePopupAddBtn').on('click' , function(){
+        let input = $(this).prev('.field').find('input');
         let LectureName = $(input).val();
         if ($(input).val()) {
             let newLecture = '<div class="lecture">' +
@@ -262,7 +262,7 @@
                                     '<div class="lectureBtn deleteLecture"> <img src="images/icon-trash.png" alt="icon"> <span> حذف </span> </div>' +
                                 '</div>' +
                             '</div>';
-            let lecturesList = $(this).parent().next('.lecturesList');
+            let lecturesList = $('.addedLectures');
             lecturesList.append(newLecture);
             $(input).val('');
         }
@@ -288,30 +288,30 @@
         $(lecture).remove();
     });
 
-    // Add Lecture 
-    $('.addLesson').on('click' , function(){
-        let lessonInput = $(this).prev('.addLetureForm').find('.lessonName');
-        let LectureInput = $(this).prev('.addLetureForm').find('.lectureName');
-        let lessonName = $(lessonInput).val();
-        let LectureName = $(LectureInput).val();
-        console.log('Lesson Name' , lessonName);
-        console.log('Lecture Name' , LectureName);
-        if ($(lessonInput).val() && $(LectureInput).val()) {
-            let newLesson = '<div class="lecture lesson">' +
-                                '<input type="text" disabled value="' + lessonName + '">' +
-                                '<input type="text" disabled value="' + LectureName + '">' +
-                                '<div class="lectureAction">' +
-                                    '<div class="lectureBtn editLecture"> <img src="images/icon-pencil.png" alt="icon"> <span> تعديل </span></div>' +
-                                    '<div class="lectureBtn deleteLecture"> <img src="images/icon-trash.png" alt="icon"> <span> حذف </span> </div>' +
-                                '</div>' +
-                            '</div>';
-                            console.log(newLesson);
-            let lessonsList = $(this).parent().next('.lecturesList');
-            lessonsList.append(newLesson);
-            $(lessonInput).val('');
-            $(LectureInput).val('');
-        }
-    });
+    // // Add Lecture 
+    // $('.addLesson').on('click' , function(){
+    //     let lessonInput = $(this).prev('.addLetureForm').find('.lessonName');
+    //     let LectureInput = $(this).prev('.addLetureForm').find('.lectureName');
+    //     let lessonName = $(lessonInput).val();
+    //     let LectureName = $(LectureInput).val();
+    //     console.log('Lesson Name' , lessonName);
+    //     console.log('Lecture Name' , LectureName);
+    //     if ($(lessonInput).val() && $(LectureInput).val()) {
+    //         let newLesson = '<div class="lecture lesson">' +
+    //                             '<input type="text" disabled value="' + lessonName + '">' +
+    //                             '<input type="text" disabled value="' + LectureName + '">' +
+    //                             '<div class="lectureAction">' +
+    //                                 '<div class="lectureBtn editLecture"> <img src="images/icon-pencil.png" alt="icon"> <span> تعديل </span></div>' +
+    //                                 '<div class="lectureBtn deleteLecture"> <img src="images/icon-trash.png" alt="icon"> <span> حذف </span> </div>' +
+    //                             '</div>' +
+    //                         '</div>';
+    //                         console.log(newLesson);
+    //         let lessonsList = $(this).parent().next('.lecturesList');
+    //         lessonsList.append(newLesson);
+    //         $(lessonInput).val('');
+    //         $(LectureInput).val('');
+    //     }
+    // });
 
     // Edit Lesson 
     $(document).on('click', '.lesson .editLecture' , function(){

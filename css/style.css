@@ -2808,7 +2808,7 @@ option:disabled {
 
 .addLetureForm {
     padding: 5px 15px;
-    width: calc(100% - 55px);
+    width: calc(100% - 125px);
 }
 
 .addLetureForm label {
@@ -2819,14 +2819,12 @@ option:disabled {
     font-weight: 500;
 }
 
-.addLetureForm input {
-    height: 40px;
-    background: transparent;
-    padding: 0 15px;
-    border: 0;
-    color: #929292;
-    font-size: 14px;
-    font-weight: 500;
+.addLessonForm {
+    display: flex;
+}
+
+.addLessonForm > * {
+    width: 50%;
 }
 
 .lectures .btnOrange {
@@ -2915,20 +2913,6 @@ option:disabled {
 
 .lectureBtn span {
     margin-right: 5px;
-}
-
-.addLessonForm {
-    display: flex;
-}
-
-.addLessonForm .fieldBox {
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.addLessonForm input {
-    width: auto;
 }
 
 .courseTrainerBox {
@@ -3127,6 +3111,14 @@ option:disabled {
     font-size: 15px;
 }
 
+.modalContent {
+    bottom: 0;
+    margin: 0;
+}
+
+.modalContent .loginFormHead {
+    margin-bottom: 30px;
+}
 
 @media screen and (max-width:575px) {
     .order1 {
@@ -3148,22 +3140,14 @@ option:disabled {
     }
 
     .addLetureForm {
-        width: 100%;
+        width: calc( 100% - 30px);
+        margin-left: auto;
         padding: 5px;
         align-items: center;
     }
 
     .addLetureForm label {
         font-size: 11px
-    }
-
-    .addLetureForm input {
-        width: 100%;
-        height: 35px;
-        padding: 0 10px;
-        font-size: 12px;
-        border: 1px solid #f3f3f3;
-        border-radius: 5px;
     }
 
     .lectures .btnOrange {
@@ -3202,25 +3186,6 @@ option:disabled {
     .lectureBtn {
         width: 25px;
         height: 25px;
-    }
-
-    .addLessonForm {
-        flex-direction: column;
-    }
-
-    .addLessonForm .fieldBox {
-        width: 100%;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .addLessonForm .fieldBox label {
-        font-size: 10px;
-    }
-
-    .addLessonForm .fieldBox input {
-        width: 100%;
     }
 
     .lesson {
@@ -3387,21 +3352,11 @@ option:disabled {
 @media (min-width:768px) and (max-width:992px) {
     .addLetureForm {
         padding: 0 10px 0 0;
-        width: calc(100% - 45px);
+        width: calc(100% - 75px);
     }
 
     .addLetureForm label {
         font-size: 11px;
-    }
-
-    .addLetureForm input {
-        width: calc(100% - 90px);
-        padding: 0 10px;
-        font-size: 11px;
-    }
-
-    .addLessonForm .fieldBox:last-of-type input {
-        width: calc(100% - 99px);
     }
 
     .lectures .btnOrange {
@@ -3444,6 +3399,10 @@ option:disabled {
         height: 45px;
         margin-bottom: 10px;
     }
+
+    .modal-dialog {
+        max-width: 700px;
+    }
 }
 
 @media (max-width: 1024px) and (min-width: 575px) {
@@ -3453,20 +3412,14 @@ option:disabled {
 }
 
 @media (min-width:1024px) {
-    .addLetureForm input {
-        width: calc(100% - 130px);
-    }
-
-    .addLessonForm .fieldBox:first-of-type input {
-        width: calc(100% - 97px);
-    }
-
-    .addLessonForm .fieldBox:last-of-type input {
-        width: calc(100% - 144px);
-    }
-
     .lecture input {
         width: calc(100% - 125px);
+    }
+    .addLessonForm label:nth-child(2) {
+        padding-right: 20px;
+    }
+    .modal-dialog {
+        max-width: 800px;
     }
 }
 
