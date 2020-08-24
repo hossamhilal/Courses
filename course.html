@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/icofont.min.css">
     <link rel="stylesheet" href="plugins/owlCarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="plugins/animation/animate.min.css">
-    <link rel="stylesheet" href="plugins/jqueryUi/jquery-ui.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="icon" href="images/xIcon.png" type="image/x-icon" />
@@ -20,6 +19,24 @@
 
 <body>
 
+    <!-- Loader  -->
+    <div class="loader">
+        <div class="book">
+            <div class="bookInner">
+                <div class="bookLeft"></div>
+                <div class="bookMiddle"></div>
+                <div class="bookRight"></div>
+            </div>
+            <ul>
+                <li></li> <li></li> <li></li>
+                <li></li> <li></li> <li></li>     
+                <li></li> <li></li> <li></li>
+                <li></li> <li></li> <li></li>
+                <li></li> <li></li> <li></li>
+                <li></li> <li></li> <li></li>
+            </ul>
+        </div>
+    </div>
 
     <!-- HEADER  -->
     <div class="header internalHeader">
@@ -61,7 +78,7 @@
                     </div>  
 
                     <!-- Before Login  -->
-                    <div class="loginActions">
+                    <!-- <div class="loginActions">
                         <a href="login.html" class="btnBlue"> تسجيل دخول </a>
                         <a href="signUp.html" class="btnBlue"> تسجيل جديد </a>
                     </div> 
@@ -71,18 +88,18 @@
                             <a href="login.html"> تسجيل دخول </a>
                             <a href="signUp.html"> تسجيل جديد </a>
                         </div>
-                    </div>
+                    </div> -->
                     
                     <!-- After Login  -->
-                    <!-- <div class="user dropToggle">
+                    <div class="user dropToggle">
                         <div class="userIcon"> <img src="images/user1.png" alt="icon" class="img-fluid"> </div>
                         <div class="userText"> مرحبا بك حسام هلال </div>
                         <i class="icofont-simple-down"></i>
                         <div class="userList dropList">
-                            <a href="profile.html"> <img src="images/icon-profile.svg" alt="ion"> الملف الشخصى </a>
+                            <a href="profile-student.html"> <img src="images/icon-profile.svg" alt="ion"> الملف الشخصى </a>
                             <a href="index.html"><img src="images/icon-logout.svg" alt="ion"> تسجيل الخروج </a>
                         </div> 
-                    </div>    -->
+                    </div>   
 
                     <!-- Mobile  -->
                     <div class="mobile">
@@ -106,7 +123,7 @@
         </div>
     </div>
 
-    <!-- course Page  -->
+    <!-- course Before Pay Page  -->
     <div class="coursePage secPadding">
         <div class="container">
             <div class="row">
@@ -130,7 +147,7 @@
                         <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
                         <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
                         <div class="coursePrice"> 300 رس </div>
-                        <a href="#" class="joinCourse btnOrange"> اشترى الان </a>
+                        <a href="banks.html" class="joinCourse btnOrange"> اشترى الان </a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 order1 wow fadeInUp">
@@ -158,98 +175,64 @@
                             </div>
                             <div class="tabContent" id="tab2"> 
                                 <form action="">
-                                    <div class="lectures tabPadding">
+                                    <div class="lectures tabPadding courseBeforePay">
                                         <div class="leturesHead">
                                             <div class="addLetureForm">
-                                                <label>  عنوان المحاضرة : </label>
-                                                <input type="text">
+                                                <label>   ملفات الدورة </label>
                                             </div>
-                                            <button class="addLecture btnOrange" type="button"> <i class="icofont-plus"></i> </button>
                                         </div>
                                         <div class="lecturesList">
                                             <!-- lecture  -->
                                             <div class="lecture">
-                                                <input type="text" disabled value="يتم كتابة اسم المحاضرة">
-                                                <div class="lectureAction">
-                                                    <div class="lectureBtn editLecture"> <img src="images/icon-pencil.png" alt="icon"> <span> تعديل </span></div>
-                                                    <div class="lectureBtn deleteLecture"> <img src="images/icon-trash.png" alt="icon"> <span> حذف </span> </div>
+                                                <h5> يتم كتابة اسم المحاضرة </h5>
+                                                <div class="BeforePayInfo">
+                                                    <div class="lock"> <i class="icofont-lock"></i> </div>
                                                 </div>
                                             </div>
                                             <!-- lecture  -->
                                             <div class="lecture">
-                                                <input type="text" disabled value="يتم كتابة اسم المحاضرة">
-                                                <div class="lectureAction">
-                                                    <div class="lectureBtn editLecture"> <img src="images/icon-pencil.png" alt="icon"> <span> تعديل </span></div>
-                                                    <div class="lectureBtn deleteLecture"> <img src="images/icon-trash.png" alt="icon"> <span> حذف </span> </div>
+                                                <h5> يتم كتابة اسم المحاضرة </h5>
+                                                <div class="BeforePayInfo">
+                                                    <div class="lock"> <i class="icofont-lock"></i> </div>
+                                                    <div class="exTime"> 10 Min </div>
+                                                    <div class="exQuestion"> 5 Questions </div>
                                                 </div>
                                             </div>
                                             <!-- lecture  -->
                                             <div class="lecture">
-                                                <input type="text" disabled value="يتم كتابة اسم المحاضرة">
-                                                <div class="lectureAction">
-                                                    <div class="lectureBtn editLecture"> <img src="images/icon-pencil.png" alt="icon"> <span> تعديل </span></div>
-                                                    <div class="lectureBtn deleteLecture"> <img src="images/icon-trash.png" alt="icon"> <span> حذف </span> </div>
+                                                <h5> يتم كتابة اسم المحاضرة </h5>
+                                                <div class="BeforePayInfo">
+                                                    <div class="lock"> <i class="icofont-lock"></i> </div>
                                                 </div>
                                             </div>
                                             <!-- lecture  -->
                                             <div class="lecture">
-                                                <input type="text" disabled value="يتم كتابة اسم المحاضرة">
-                                                <div class="lectureAction">
-                                                    <div class="lectureBtn editLecture"> <img src="images/icon-pencil.png" alt="icon"> <span> تعديل </span></div>
-                                                    <div class="lectureBtn deleteLecture"> <img src="images/icon-trash.png" alt="icon"> <span> حذف </span> </div>
+                                                <h5> يتم كتابة اسم المحاضرة </h5>
+                                                <div class="BeforePayInfo">
+                                                    <div class="lock"> <i class="icofont-lock"></i> </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="lectures lessons tabPadding">
-                                        <div class="leturesHead">
-                                            <div class="addLetureForm addLessonForm">
-                                                <div class="fieldBox">
-                                                    <label>  عنوان الدرس :</label>
-                                                    <input type="text" class="lessonName">
-                                                </div>
-                                                <div class="fieldBox">
-                                                    <label>  المحاضرة التابع لها :</label>
-                                                    <input type="text" class="lectureName">
+                                            <!-- lecture  -->
+                                            <div class="lecture">
+                                                <h5> يتم كتابة اسم المحاضرة </h5>
+                                                <div class="BeforePayInfo">
+                                                    <div class="lock"> <i class="icofont-lock"></i> </div>
+                                                    <div class="exTime"> 10 Min </div>
+                                                    <div class="exQuestion"> 5 Questions </div>
                                                 </div>
                                             </div>
-                                            <button class="addLesson btnOrange" type="button"> <i class="icofont-plus"></i> </button>
-                                        </div>
-                                        <div class="lecturesList">
-                                            <!-- Lesson  -->
-                                            <div class="lecture lesson">
-                                                <input type="text" disabled value="يتم كتابة اسم الدرس">
-                                                <input type="text" disabled value="يتم كتابة اسم المحاضرة">
-                                                <div class="lectureAction">
-                                                    <div class="lectureBtn editLecture"> <img src="images/icon-pencil.png" alt="icon"> <span> تعديل </span></div>
-                                                    <div class="lectureBtn deleteLecture"> <img src="images/icon-trash.png" alt="icon"> <span> حذف </span> </div>
+                                            <!-- lecture  -->
+                                            <div class="lecture">
+                                                <h5> يتم كتابة اسم المحاضرة </h5>
+                                                <div class="BeforePayInfo">
+                                                    <div class="lock"> <i class="icofont-lock"></i> </div>
                                                 </div>
                                             </div>
-                                            <!-- Lesson  -->
-                                            <div class="lecture lesson">
-                                                <input type="text" disabled value="يتم كتابة اسم الدرس">
-                                                <input type="text" disabled value="يتم كتابة اسم المحاضرة">
-                                                <div class="lectureAction">
-                                                    <div class="lectureBtn editLecture"> <img src="images/icon-pencil.png" alt="icon"> <span> تعديل </span></div>
-                                                    <div class="lectureBtn deleteLecture"> <img src="images/icon-trash.png" alt="icon"> <span> حذف </span> </div>
-                                                </div>
-                                            </div>
-                                            <!-- Lesson  -->
-                                            <div class="lecture lesson">
-                                                <input type="text" disabled value="يتم كتابة اسم الدرس">
-                                                <input type="text" disabled value="يتم كتابة اسم المحاضرة">
-                                                <div class="lectureAction">
-                                                    <div class="lectureBtn editLecture"> <img src="images/icon-pencil.png" alt="icon"> <span> تعديل </span></div>
-                                                    <div class="lectureBtn deleteLecture"> <img src="images/icon-trash.png" alt="icon"> <span> حذف </span> </div>
-                                                </div>
-                                            </div>
-                                            <!-- Lesson  -->
-                                            <div class="lecture lesson">
-                                                <input type="text" disabled value="يتم كتابة اسم الدرس">
-                                                <input type="text" disabled value="يتم كتابة اسم المحاضرة">
-                                                <div class="lectureAction">
-                                                    <div class="lectureBtn editLecture"> <img src="images/icon-pencil.png" alt="icon"> <span> تعديل </span></div>
-                                                    <div class="lectureBtn deleteLecture"> <img src="images/icon-trash.png" alt="icon"> <span> حذف </span> </div>
+                                            <!-- lecture  -->
+                                            <div class="lecture">
+                                                <h5> يتم كتابة اسم المحاضرة </h5>
+                                                <div class="BeforePayInfo">
+                                                    <div class="lock"> <i class="icofont-lock"></i> </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -416,7 +399,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="plugins/owlCarousel/owl.carousel.min.js"></script>
     <script src="plugins/animation/wow.min.js"></script>
-    <script src="plugins/jqueryUi/jquery-ui.min.js"></script>
     <script src="js/custom.js"></script>
 
 </body>

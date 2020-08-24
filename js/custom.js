@@ -3,11 +3,11 @@
     "use strict";
 
     $(window).on('load', function(){
-        // $('body').addClass('stopScroll');
-        // $('.loader').fadeOut(500, function () {
-        //     $(this).remove();
-        //     $('body').removeClass('stopScroll');
-        // }); 
+        $('body').addClass('stopScroll');
+        $('.loader').fadeOut(500, function () {
+            $(this).remove();
+            $('body').removeClass('stopScroll');
+        }); 
 
         // Adjust Textarea Height
         var textArea = document.querySelectorAll('textarea[data-adaptheight]');
@@ -89,132 +89,7 @@
             }
         }
     });
-
-    // // Ad Images OWL
-    // var owlAdImages = $('.owlAdImages');
-    // owlAdImages.owlCarousel({
-    //     rtl: true,
-    //     margin: 0,
-    //     autoplay: false,
-    //     loop: false,
-    //     nav: false,
-    //     dots: false,
-    //     center : false ,
-    //     autoplaySpeed : 1000,
-    //     autoplayTimeout : 1000,
-    //     smartSpeed: 1000 ,
-    //     responsive: {
-    //         0: {
-    //             items: 1
-    //         },
-    //         600: {
-    //             items: 1
-    //         },
-    //         1000: {
-    //             items: 1
-    //         }
-    //     }
-    // });
   
-    // // Go to the next item
-    // $('.next').click(function() {
-    //     $(this).parents('.productSlider').find('.owlAdImages').trigger('next.owl.carousel');
-    // });
-
-    // // Go to the previous item
-    // $('.prev').click(function() {
-    //     $(this).parents('.productSlider').find('.owlAdImages').trigger('prev.owl.carousel', [300]);
-    // });
-
-    // // Get Total Count Of Items 
-    // $('.owlAdImages').each(function(){
-    //     let totalItems = $(this).find('.item').length;
-    //     $(this).parent().find('.ImgCountNumber').text(totalItems);
-    // })
-
-    // Partners OWL 
-    // $('.owlClients').owlCarousel({
-    //     rtl: true,
-    //     margin: 20,
-    //     autoplay: true,
-    //     loop: true,
-    //     nav: false,
-    //     dots: false,
-    //     center : false ,
-    //     autoplaySpeed : 3000,
-    //     autoplayTimeout : 3000,
-    //     smartSpeed: 3000 ,
-    //     navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
-    //     responsive: {
-    //         0: {
-    //             items: 2
-    //         },
-    //         600: {
-    //             items: 4
-    //         },
-    //         1000: {
-    //             items: 6
-    //         }
-    //     }
-    // });
-
-    // Related Owl owlRelated
-    // $('.owlRelated').owlCarousel({
-    //     rtl: true ,
-    //     margin: 10,
-    //     autoplay: true,
-    //     loop: true,
-    //     nav: true,
-    //     dots: false,
-    //     center : false ,
-    //     autoplaySpeed : 1000,
-    //     autoplayTimeout : 1000,
-    //     smartSpeed: 1000 ,
-    //     navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
-    //     responsive: {
-    //         0: {
-    //             items: 2
-    //         },
-    //         600: {
-    //             items: 5
-    //         },
-    //         1000: {
-    //             items: 6
-    //         }
-    //     }
-    // });
-
-    // // Clients OWL 
-    // $('.owlAdPage').owlCarousel({
-    //     rtl: true ,
-    //     margin: 10,
-    //     autoplay: false,
-    //     loop: true,
-    //     nav: true,
-    //     dots: false,
-    //     center : true ,
-    //     autoplaySpeed : 1000,
-    //     autoplayTimeout : 1000,
-    //     smartSpeed: 1000 ,
-    //     navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
-    //     responsive: {
-    //         0: {
-    //             items: 3
-    //         },
-    //         600: {
-    //             items: 5
-    //         },
-    //         1000: {
-    //             items: 5
-    //         }
-    //     }
-    // });
-
-    // Add To Favourite 
-    // $('.addToFav').on('click' , function(){
-    //     $(this).toggleClass('addedToFav');
-    // });
-
     // Toggle Password 
     $('.showPassword').click(function(){
         let passWord = $(this).parent().find('input');
@@ -294,31 +169,6 @@
         let lecture = $(this).parent().parent('.lecture');
         $(lecture).remove();
     });
-
-    // // Add Lecture 
-    // $('.addLesson').on('click' , function(){
-    //     let lessonInput = $(this).prev('.addLetureForm').find('.lessonName');
-    //     let LectureInput = $(this).prev('.addLetureForm').find('.lectureName');
-    //     let lessonName = $(lessonInput).val();
-    //     let LectureName = $(LectureInput).val();
-    //     console.log('Lesson Name' , lessonName);
-    //     console.log('Lecture Name' , LectureName);
-    //     if ($(lessonInput).val() && $(LectureInput).val()) {
-    //         let newLesson = '<div class="lecture lesson">' +
-    //                             '<input type="text" disabled value="' + lessonName + '">' +
-    //                             '<input type="text" disabled value="' + LectureName + '">' +
-    //                             '<div class="lectureAction">' +
-    //                                 '<div class="lectureBtn editLecture"> <img src="images/icon-pencil.png" alt="icon"> <span> تعديل </span></div>' +
-    //                                 '<div class="lectureBtn deleteLecture"> <img src="images/icon-trash.png" alt="icon"> <span> حذف </span> </div>' +
-    //                             '</div>' +
-    //                         '</div>';
-    //                         console.log(newLesson);
-    //         let lessonsList = $(this).parent().next('.lecturesList');
-    //         lessonsList.append(newLesson);
-    //         $(lessonInput).val('');
-    //         $(LectureInput).val('');
-    //     }
-    // });
 
     // Edit Lesson 
     $(document).on('click', '.lesson .editLecture' , function(){
@@ -476,22 +326,33 @@
         $(itemId).addClass('show');
     });
     
-    
+    // FaQ
+    $('.questionHead').on('click' , function(){
+        let parentFaq = $(this).parent('.question');
+        if(parentFaq.hasClass('open')){
+            $('.question').removeClass('open');
+            $('.questionBody').slideUp();
+        } else {
+            $('.question').removeClass('open');
+            $('.questionBody').slideUp();
+            $(parentFaq).addClass('open');
+            $(parentFaq).find('.questionBody').slideDown();
+        }
+    });
 
-
-
-    // Allow Edit Profile 
-    // $('.editProfile').on('click' , function(){
-    //     let allInputs = $('.profileInfoBox input');
-    //     if (allInputs.attr('disabled'))  {
-    //         allInputs.removeAttr('disabled');
-    //     } else {
-    //         allInputs.attr('disabled', 'disabled');
-    //     }
-    // });
-
-    
-
+    // Lecture List 
+    $('.listItemHead').on('click' , function(){
+        let parentFaq = $(this).parent('.listItem');
+        if(parentFaq.hasClass('open')){
+            $('.listItem').removeClass('open');
+            $('.listItemBody').slideUp();
+        } else {
+            $('.listItem').removeClass('open');
+            $('.listItemBody').slideUp();
+            $(parentFaq).addClass('open');
+            $(parentFaq).find('.listItemBody').slideDown();
+        }
+    });
     
     // iniat WOW Js
     new WOW().init();

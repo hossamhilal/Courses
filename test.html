@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="plugins/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/animation/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="images/xIcon.png" type="image/x-icon" />
+    <title> البراعة للقدرات </title>
+</head>
+
+<body>
+
+    <!-- Loader  -->
+    <div class="loader">
+        <div class="book">
+            <div class="bookInner">
+                <div class="bookLeft"></div>
+                <div class="bookMiddle"></div>
+                <div class="bookRight"></div>
+            </div>
+            <ul>
+                <li></li> <li></li> <li></li>
+                <li></li> <li></li> <li></li>     
+                <li></li> <li></li> <li></li>
+                <li></li> <li></li> <li></li>
+                <li></li> <li></li> <li></li>
+                <li></li> <li></li> <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- HEADER  -->
+    <div class="header internalHeader">
+        <div class="container">
+
+            <!-- Header box -->
+            <div class="headerBox">
+                <div class="logo">
+                    <a href="index.html"> <img src="images/logo.png" alt="logo" class="img-fluid"> </a>
+                </div>
+
+                <!-- Nav Menu  -->
+                <div class="navMenu">
+                    <ul>
+                        <li> <a href="banks.html">  الحسابات البنكية </a> </li>
+                        <li> <a href="courses.html">   الدورات الحالية </a> </li>
+                        <li> <a href="faq.html"> الاسئلة الشائعة </a> </li>
+                        <li> <a href="results.html"> درجات الطلاب  </a> </li>
+                        <li> <a href="opinions.html"> آراء الطلاب </a> </li>  
+                        <li> <a href="contact.html"> تواصل معنا </a> </li>  
+                    </ul>
+                </div>
+                
+                <div class="leftSide">                    
+                    <!-- Searh  -->
+                    <div class="search">                   
+                        <div class="openSearch btnGrey"> <i class="icofont-search"></i> </div>
+                        <div class="searchPopup"> 
+                            <div class="close"> <i class="icofont-close-line"></i> </div>
+                            <div class="searchForm"> 
+                                <form action="">
+                                    <div class="searchBox">
+                                        <input type="text" placeholder="ابحث هنا ">
+                                        <button type="submit" class="btnGrey"> <i class="icofont-search"></i>  </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <!-- Before Login  -->
+                    <!-- <div class="loginActions">
+                        <a href="login.html" class="btnBlue"> تسجيل دخول </a>
+                        <a href="signUp.html" class="btnBlue"> تسجيل جديد </a>
+                    </div> 
+                    <div class="loginMobile dropToggle">
+                        <div class="loginMobileIcon"> <img src="images/icon-user-mob.png" alt="icon" class="img-fluid"> </div>
+                        <div class="userList dropList">
+                            <a href="login.html"> تسجيل دخول </a>
+                            <a href="signUp.html"> تسجيل جديد </a>
+                        </div>
+                    </div> -->
+                    
+                    <!-- After Login  -->
+                    <div class="user dropToggle">
+                        <div class="userIcon"> <img src="images/user1.png" alt="icon" class="img-fluid"> </div>
+                        <div class="userText"> مرحبا بك حسام هلال </div>
+                        <i class="icofont-simple-down"></i>
+                        <div class="userList dropList">
+                            <a href="profile-student.html"> <img src="images/icon-profile.svg" alt="ion"> الملف الشخصى </a>
+                            <a href="index.html"><img src="images/icon-logout.svg" alt="ion"> تسجيل الخروج </a>
+                        </div> 
+                    </div>   
+
+                    <!-- Mobile  -->
+                    <div class="mobile">
+                        <div class="menuBtn"> <span></span> <span></span> <span></span> </div>
+                        <div class="navOverlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- course View Page  -->
+    <div class="coursePage secPadding">
+        <div class="container">
+            <div class="courseViewBox">
+                <div class="row">                   
+                    <div class="col-12 col-sm-8 col-lg-9 wow fadeInUp">
+                        <div class="quizBox">
+                            <div class="quizCounts">
+                                <div class="quizCount"> 
+                                    <label> <span class="questionNumber"> 1 </span> / <span class="totalNumber"> 10 </span> </label>
+                                    <span> السؤال </span>
+                                </div>
+                                <div class="quizCount countTmer"> 
+                                    <label class="countdown"></label>
+                                    <span> المتبقى </span>
+                                </div>
+                            </div>
+                            <div class="quizQuestions">
+                                <div class="quizQuestion active" id="question1">
+                                    <div class="quizQuestionHead"> 1 - هذا النص هو مثال لنص يمكن أن يستبدل بنص أخر ؟ </div>
+                                    <div class="quizQuestionBody">
+                                        <ul>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="quizQuestion" id="question2">
+                                    <div class="quizQuestionHead"> 2 - هذا النص هو مثال لنص يمكن أن يستبدل بنص أخر ؟ </div>
+                                    <div class="quizQuestionBody">
+                                        <ul>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="quizQuestion" id="question3">
+                                    <div class="quizQuestionHead"> 3 - هذا النص هو مثال لنص يمكن أن يستبدل بنص أخر ؟ </div>
+                                    <div class="quizQuestionBody">
+                                        <ul>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="quizQuestion" id="question4">
+                                    <div class="quizQuestionHead"> 4 - هذا النص هو مثال لنص يمكن أن يستبدل بنص أخر ؟ </div>
+                                    <div class="quizQuestionBody">
+                                        <ul>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="quizQuestion" id="question5">
+                                    <div class="quizQuestionHead"> 5 - هذا النص هو مثال لنص يمكن أن يستبدل بنص أخر ؟ </div>
+                                    <div class="quizQuestionBody">
+                                        <ul>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="quizQuestion" id="question6">
+                                    <div class="quizQuestionHead"> 6 - هذا النص هو مثال لنص يمكن أن يستبدل بنص أخر ؟ </div>
+                                    <div class="quizQuestionBody">
+                                        <ul>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="quizQuestion" id="question7">
+                                    <div class="quizQuestionHead"> 7 - هذا النص هو مثال لنص يمكن أن يستبدل بنص أخر ؟ </div>
+                                    <div class="quizQuestionBody">
+                                        <ul>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="quizQuestion" id="question8">
+                                    <div class="quizQuestionHead"> 8 - هذا النص هو مثال لنص يمكن أن يستبدل بنص أخر ؟ </div>
+                                    <div class="quizQuestionBody">
+                                        <ul>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="quizQuestion" id="question9">
+                                    <div class="quizQuestionHead"> 9 - هذا النص هو مثال لنص يمكن أن يستبدل بنص أخر ؟ </div>
+                                    <div class="quizQuestionBody">
+                                        <ul>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="quizQuestion" id="question10">
+                                    <div class="quizQuestionHead"> 10 - هذا النص هو مثال لنص يمكن أن يستبدل بنص أخر ؟ </div>
+                                    <div class="quizQuestionBody">
+                                        <ul>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                            <li> 
+                                                <input type="radio" name="q1">
+                                                <label> هذا النص هو مثال يمكن أن يستبدل </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courseControls testControls">
+                                <div class="courseControl testControl previous">
+                                    <label> السابق </label>
+                                    <h5> يتم كتابة اسم المحاضرة </h5>
+                                    <div class="controlIcon"> <i class="icofont-long-arrow-right"></i> </div>
+                                </div>
+                                <div class="courseControl testControl next">
+                                    <label> التالى </label>
+                                    <h5> يتم كتابة اسم المحاضرة </h5>
+                                    <div class="controlIcon"> <i class="icofont-long-arrow-left"></i> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-lg-3 wow fadeInUp">
+                        <div class="courseList">
+                            <div class="courseListHead"> ملفات الدورة : </div>
+                            <div class="courseListBody">
+                                <!-- Lecture  -->
+                                <div class="listItem open">
+                                    <div class="listItemHead"> يتم كتابة اسم المحاضرة  <span></span></div>
+                                    <div class="listItemBody">
+                                        <div class="listLesson" data-Video="videos/video1.mp4"> الدرس الأول  </div>
+                                        <div class="listLesson" data-Video="videos/video2.mp4">  الدرس الثانى </div>
+                                        <a href="test.html"> اختبار على الدرس الأول </a>
+                                    </div>
+                                </div>
+                                <!-- Lecture  -->
+                                <div class="listItem">
+                                    <div class="listItemHead"> يتم كتابة اسم المحاضرة <span></span></div>
+                                    <div class="listItemBody">
+                                        <div class="listLesson" data-Video="videos/video1.mp4"> الدرس الأول  </div>
+                                        <div class="listLesson" data-Video="videos/video2.mp4">  الدرس الثانى </div>
+                                        <a href="test.html"> اختبار على الدرس الأول </a>
+                                    </div>
+                                </div>
+                                <!-- Lecture  -->
+                                <div class="listItem">
+                                    <div class="listItemHead"> يتم كتابة اسم المحاضرة <span></span></div>
+                                    <div class="listItemBody">
+                                        <div class="listLesson" data-Video="videos/video1.mp4"> الدرس الأول  </div>
+                                        <div class="listLesson" data-Video="videos/video2.mp4">  الدرس الثانى </div>
+                                        <a href="test.html"> اختبار على الدرس الأول </a>
+                                    </div>
+                                </div>
+                                <!-- Lecture  -->
+                                <div class="listItem">
+                                    <div class="listItemHead"> يتم كتابة اسم المحاضرة <span></span></div>
+                                    <div class="listItemBody">
+                                        <div class="listLesson" data-Video="videos/video1.mp4"> الدرس الأول  </div>
+                                        <div class="listLesson" data-Video="videos/video2.mp4">  الدرس الثانى </div>
+                                        <a href="test.html"> اختبار على الدرس الأول </a>
+                                    </div>
+                                </div>
+                                <!-- Lecture  -->
+                                <div class="listItem">
+                                    <div class="listItemHead"> يتم كتابة اسم المحاضرة <span></span></div>
+                                    <div class="listItemBody">
+                                        <div class="listLesson" data-Video="videos/video1.mp4"> الدرس الأول  </div>
+                                        <div class="listLesson" data-Video="videos/video2.mp4">  الدرس الثانى </div>
+                                        <a href="test.html"> اختبار على الدرس الأول </a>
+                                    </div>
+                                </div>
+                                <!-- Lecture  -->
+                                <div class="listItem">
+                                    <div class="listItemHead"> يتم كتابة اسم المحاضرة <span></span></div>
+                                    <div class="listItemBody">
+                                        <div class="listLesson" data-Video="videos/video1.mp4"> الدرس الأول  </div>
+                                        <div class="listLesson" data-Video="videos/video2.mp4">  الدرس الثانى </div>
+                                        <a href="test.html"> اختبار على الدرس الأول </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <div class="courseDetails wow fadeInUp">
+                <div class="detailsBlock">
+                    <h2 class="courseTitle"> نبذة تعريفية </h2>
+                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى</p>
+                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد م النصوص الأخرى إضافة إلى زيادة عدد الحروف </p>
+                </div>
+                <div class="detailsBlock">
+                    <h2 class="courseTitle">  مميزات الدورة </h2>
+                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى</p>
+                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد م النصوص الأخرى إضافة إلى زيادة عدد الحروف </p>
+                </div>
+            </div>
+            <div class="courseAddComments addCommentWrapper wow fadeInUp">
+                <form action="">
+                    <h3>  أضف تعليقا : </h3>
+                    <div class="stars addRate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5"> <i class="icofont-star"></i> </label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4"> <i class="icofont-star"></i> </label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3"> <i class="icofont-star"></i> </label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2"> <i class="icofont-star"></i> </label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1"> <i class="icofont-star"></i> </label>
+                    </div>
+                    <div class="commentInput">
+                        <textarea  placeholder="اكتب تعليقك"></textarea>
+                    </div>
+                    <button type="submit" class="btnOrange btnArrow"> <span> ارســال </span> <i class="icofont-long-arrow-left"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-5 col-md-4 col-lg-4 wow fadeInUp">
+                    <div class="logo">
+                        <a href="index.html"> <img src="images/logo.png" alt="logo" class="img-fluid"> </a>
+                    </div>
+                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-5 wow fadeInUp">
+                    <div class="footerBlocks">
+                        <div class="footerBlock">
+                            <h3> روابط سريعة </h3>
+                            <div class="list">
+                                <a href="banks.html"><i class="icofont-thin-double-left"></i>  الحسابات البنكية </a>
+                                <a href="courses.html"><i class="icofont-thin-double-left"></i>   الدورات الحالية </a> 
+                                <a href="faq.html"><i class="icofont-thin-double-left"></i> الاسئلة الشائعة </a> 
+                                <a href="opinions.html"><i class="icofont-thin-double-left"></i> آراء الطلاب </a>
+                            </div>
+                        </div>
+                        <div class="footerBlock">
+                            <h3> روابط سريعة </h3>
+                            <div class="list">
+                                <a href="blogs.html"><i class="icofont-thin-double-left"></i> المدونة </a>
+                                <a href="about.html"><i class="icofont-thin-double-left"></i>  من نحن  </a>
+                                <a href="policy.html"><i class="icofont-thin-double-left"></i> شروط الاستخدام </a>
+                                <a href="results.html"><i class="icofont-thin-double-left"></i> درجات الطلاب  </a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 col-md-4 col-lg-3 wow fadeInUp">
+                    <h3> المزادات </h3>
+                    <p> <img src="images/icon-pin.png" alt="icon">  الرياض , السعودية</p>
+                    <p> <img src="images/icon-phone.png" alt="icon"> +966549782553 </p>
+                    <p> <img src="images/icon-mail.png" alt="icon"> info@name.com.sa </p>
+                    <div class="social">    
+                        <a href="#" class="google"> <i class="icofont-google-plus"></i> </a>
+                        <a href="#" class="twitter"> <i class="icofont-twitter"></i> </a>
+                        <a href="#" class="facebook"> <i class="icofont-facebook"></i> </a>
+                        <a href="#" class="youtube"> <i class="icofont-youtube-play"></i> </a>
+                    </div> 
+                </div>
+                <div class="col-12">
+                    <!-- Copyright  -->
+                    <div class="copyright wow fadeInUp">
+                        <p> جميع الحقوق محفوظة لموقع  <a href="#"> البراعة </a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/owlCarousel/owl.carousel.min.js"></script>
+    <script src="plugins/animation/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+    
+    <script>
+        (function($) {
+            // Count Down 
+            let time = "0:10";
+            var interval ;
+            function count (){
+                interval = setInterval(function() {
+                    let timer = time.split(':');
+                    let minutes = parseInt(timer[0], 10);
+                    let seconds = parseInt(timer[1], 10);
+                    --seconds;
+                    minutes = (seconds < 0) ? --minutes : minutes;
+                    if (minutes < 0) clearInterval(interval);
+                    seconds = (seconds < 0) ? 59 : seconds;
+                    seconds = (seconds < 10) ? '0' + seconds : seconds;
+                    $('.countdown').html(minutes + ':' + seconds);
+                    time = minutes + ':' + seconds;
+
+                    // Move To Next Question 
+                    if (minutes == 0 && seconds == 0) {
+                        clearInterval(interval);
+                        let currentNumber = parseInt($('.questionNumber').text()),
+                            nextNumber = currentNumber + 1 ;
+                        console.log('currentNumber :' , currentNumber)
+                        console.log('nextNumber : ' , nextNumber)
+                        $('.questionNumber').text(nextNumber)
+
+                        $('.quizQuestion').removeClass('active');
+                        let nextQuestion = document.getElementById('question'+nextNumber)
+                        $(nextQuestion).addClass('active');
+
+                        // Reset Timer 
+                        time = "0:10";
+                        
+                        // Stop Movement and Count 
+                        let total = parseInt($('.totalNumber').text())
+                        if(nextNumber <= total) {
+                            count()
+                        } else {
+                            $('.countTmer').addClass('finished');
+                            $('.countTmer').text('انتهى الوقت');
+                        }
+                    }
+                }, 1000);
+            }
+            count()
+
+            $('.testControl').on('click' , function (e) {
+                let currentNumber = parseInt($('.questionNumber').text()),
+                    previousNumber = currentNumber - 1,
+                    nextNumber = currentNumber + 1 ,
+                    currentQuestion = document.getElementById('question'+currentNumber),
+                    previousQuestion = document.getElementById('question'+previousNumber),
+                    nextQuestion = document.getElementById('question'+nextNumber),
+                    starQuestion = document.getElementById('question1');
+
+                // Previous Button 
+                if( $(this).hasClass('previous') ) {
+                    if (previousNumber < 1) {
+                        e.stopPropagation();
+                    } else if (previousNumber == 1) {
+                        $('.questionNumber').text(previousNumber)
+                        $('.quizQuestion').removeClass('active');
+                        $(previousQuestion).addClass('active');
+                    } else {
+                        $('.quizQuestion').removeClass('active');
+                        $(previousQuestion).addClass('active');
+                        $('.questionNumber').text(previousNumber)
+                        clearInterval(interval);
+                        time = "0:10";
+                        count()
+                    }
+                } else { 
+                    // Next Button
+                    if ( nextNumber <= 10) {
+                        $('.quizQuestion').removeClass('active');
+                        $(nextQuestion).addClass('active');
+                        $('.questionNumber').text(nextNumber)
+                        clearInterval(interval);
+                        time = "0:10";
+                        count()
+                    }
+                }
+            })
+            
+        })(jQuery);
+    </script>
+</body>
+</html>

@@ -4465,68 +4465,2037 @@ hr {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .coursesPage .courseCat .icon {
         margin: 0px 0 5px;
     }
-    
+
     .coursesPage .courseCat h3 {
         margin: 0;
     }
 }
 
 /*==========================||---------------------------||========================*/
-/*==========================||         Pagination        ||========================*/
+/*==========================||     Course Before Pay     ||========================*/
 /*==========================||---------------------------||========================*/
 
-@media screen and (max-width:768px) {}
+.courseBeforePay .lecture {
+    padding: 15px 15px 15px 0;
+}
+
+.courseBeforePay .lecture::before {
+    top: 18px;
+}
+
+.courseBeforePay .lecture h5 {
+    padding: 0 15px;
+    border: 0;
+    color: #929292;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0;
+}
+
+.lecture .BeforePayInfo {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.lecture .BeforePayInfo .lock {
+    margin-right: 15px;
+}
+
+.lecture .BeforePayInfo .exTime {
+    font: 500 12px/25px Roboto;
+    color: #929292;
+    margin: 0 20px;
+}
+
+.lecture .BeforePayInfo .exQuestion {
+    height: 25px;
+    background: #1F89C5;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 11px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:575px) {
+    .courseBeforePay .lecture {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px 5px 5px 0;
+    }
+
+    .courseBeforePay .lecture::before {
+        top: 4px;
+    }
+
+    .courseBeforePay .lecture h5 {
+        font-size: 11px;
+    }
+
+    .lecture .BeforePayInfo {
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    .lecture .BeforePayInfo .exQuestion {
+        font-size: 10px;
+        padding: 0 8px;
+        height: 20px;
+    }
+
+    .lecture .BeforePayInfo .exTime {
+        font-size: 10px;
+        line-height: 20px;
+        margin: 0 15px 0 0;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .courseBeforePay .lecture {
+        padding: 8px 5px 8px 0;
+    }
+
+    .courseBeforePay .lecture::before {
+        content: url(../images/icon-play.png);
+        top: 8px;
+    }
+
+    .courseBeforePay .lecture h5 {
+        font-size: 12px;
+    }
+
+    .lecture .BeforePayInfo .exQuestion {
+        font-size: 11px;
+        padding: 0 10px;
+        height: 20px;
+    }
+
+    .lecture .BeforePayInfo .exTime {
+        font-size: 11px;
+        margin: 0 15px 0 0;
+    }
+}
 
 /*==========================||---------------------------||========================*/
-/*==========================||         Pagination        ||========================*/
+/*==========================||            Banks          ||========================*/
 /*==========================||---------------------------||========================*/
 
-@media screen and (max-width:768px) {}
+.banksBox {
+    border: 1px solid #EEEEEE;
+    padding: 4%;
+}
+
+.bankBox {
+    box-shadow: 0px 0px 30px #B4B4B40A;
+    border: 1px solid #EAEAEA;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.bankLogo {
+    width: 120px;
+    height: 100px;
+    overflow: hidden;
+    padding-left: 20px;
+    border-left: 1px solid #EAEAEA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bankLogo img {
+    border-radius: 50%;
+    max-height: 100%;
+}
+
+.bankInfo {
+    padding-right: 20px;
+}
+
+.bankInfo label {
+    margin: 0;
+    font-size: 18px;
+    color: #565656;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.bankInfo p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #8A8A8A;
+}
+
+.bankInfo p:last-of-type {
+    margin: 0;
+}
+
+.banksBox .btnOrange {
+    max-width: 520px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 15px auto 0;
+}
+
+.successBox {
+    text-align: center;
+}
+
+.successBox h1 {
+    color: #E8479F;
+    font-size: 56px;
+    line-height: 92px;
+}
+
+.successBox h3 {
+    color: #585858;
+    font-size: 23px;
+    line-height: 54px;
+}
+
+.successBox .btnOrange {
+    width: 185px;
+    height: 55px;
+    border-radius: 12px;
+    margin: 30px auto 20px;
+}
+
+@media screen and (max-width:425px) {
+    .banksBox {
+        padding: 30px 10px;
+    }
+
+    .bankBox {
+        padding: 15px 10px;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .bankLogo {
+        border: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .bankInfo p {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+    .bankInfo label {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:575px) and (max-width:768px) {
+    .banksBox {
+        padding: 30px 20px;
+    }
+
+    .bankBox {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .bankLogo {
+        width: 80px;
+        height: 70px;
+        padding-left: 10px;
+    }
+
+    .bankInfo {
+        padding-right: 10px;
+    }
+
+    .bankInfo p {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+    .bankInfo label {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .successBox h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .successBox h3 {
+        font-size: 17px;
+    }
+
+    .successBox .btnOrange {
+        width: 140px;
+        height: 45px;
+    }
+}
+
 
 /*==========================||---------------------------||========================*/
-/*==========================||         Pagination        ||========================*/
+/*==========================||             FaQ           ||========================*/
 /*==========================||---------------------------||========================*/
 
-@media screen and (max-width:768px) {}
+.faqBox {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.faqHead {
+    border-radius: 10px;
+    background: #F9F9F9;
+    padding: 15px 20px;
+    color: #333333;
+    font-size: 20px;
+    line-height: 34px;
+    width: calc(100% + 2px);
+    margin: -1px;
+}
+
+.faqBody {
+    padding: 20px;
+}
+
+.question {
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+}
+
+.questionHead {
+    border-radius: inherit;
+    background: #F9F9F9;
+    padding: 15px 40px 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.questionHead span {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 20px;
+    text-align: right;
+    line-height: 28px;
+}
+
+.questionHead h3 {
+    color: #6B6B6B;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0;
+}
+
+.questionIcon {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all .5s ease-in-out;
+}
+
+.questionBody {
+    display: none;
+}
+
+.questionBodyBox {
+    padding: 20px;
+}
+
+.questionBody p {
+    color: #484848;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.open .questionHead {
+    background: #FFAD1F;
+    color: #fff;
+}
+
+.open .questionHead h3 {
+    color: #fff;
+}
+
+.open .questionIcon {
+    transform: rotate(180deg);
+    justify-content: end;
+}
+
+
+@media screen and (max-width:767px) {
+    .faqHead {
+        padding: 5px 12px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .faqBody {
+        padding: 10px 5px;
+    }
+
+    .questionHead {
+        padding: 5px 25px 5px 5px;
+        align-items: flex-start;
+    }
+
+    .question {
+        margin-bottom: 10px;
+    }
+
+    .questionHead span {
+        font-size: 12px;
+        top: 5px;
+        right: 5px;
+        text-align: center;
+    }
+
+    .questionBodyBox {
+        padding: 10px;
+    }
+
+    .questionBody p {
+        font-size: 11px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .questionHead h3 {
+        font-size: 11px;
+        line-height: 20px;
+        padding: 0 6px;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .faqHead {
+        padding: 8px 20px;
+    }
+
+    .faqBody {
+        padding: 15px;
+    }
+
+    .question {
+        margin-bottom: 15px;
+    }
+
+    .questionHead {
+        padding: 12px 35px 12px 12px;
+    }
+
+    .questionHead {
+        padding: 12px 35px 12px 12px;
+    }
+
+    .questionHead span {
+        font-size: 12px;
+        top: 8px;
+        right: 11px;
+    }
+
+    .questionBodyBox {
+        padding: 15px;
+    }
+
+    .questionBody p {
+        font-size: 12px;
+        line-height: 23px;
+    }
+}
+
 
 /*==========================||---------------------------||========================*/
-/*==========================||         Pagination        ||========================*/
+/*==========================||    Course Details Page    ||========================*/
 /*==========================||---------------------------||========================*/
 
-@media screen and (max-width:768px) {}
+.courseViewBox {
+    margin-bottom: 30px;
+}
+
+.courseView {
+    position: relative;
+    border-radius: 8px;
+}
+
+.courseView video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: inherit;
+    position: relative;
+    z-index: 0;
+    border: 1px solid #E7E7E7;
+}
+
+.playVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65px;
+    height: 65px;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #FFAD1F;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.playVideo::before,
+.playVideo::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 94px;
+    height: 94px;
+    border-radius: inherit;
+    background: rgba(255, 173, 31, 0.2);
+    z-index: 0;
+}
+
+.playVideo::before {
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.playVideo::after {
+    transition: all 200ms;
+}
+
+.playVideo:hover::after {
+    transition: all 200ms;
+    background-color: darken(rgba(255, 173, 31, 0.2), 10%);
+}
+
+.playVideo span {
+    display: block;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 26px solid #fff;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    z-index: 2;
+}
+
+.playVideo:hover {
+    background: #E8479F;
+}
+
+.playVideo:hover::before,
+.playVideo:hover::after {
+    background: rgba(232, 71, 159, .3);
+}
+
+.courseList {
+    border: 1px solid #E7E7E7;
+    border-radius: 8px;
+}
+
+.courseListHead {
+    background: #1F89C5;
+    color: #fff;
+    border-radius: inherit;
+    padding: 13px 15px;
+    font-size: 16px;
+}
+
+.listItem {
+    padding: 15px 10px;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.listItem:last-of-type {
+    border: 0;
+}
+
+.listItemHead {
+    color: #929292;
+    font-size: 13px;
+    line-height: 35px;
+    font-weight: 500;
+    padding-right: 25px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listItemHead::before {
+    content: url('../images/icon-play.svg');
+    position: absolute;
+    top: 4px;
+    right: 0;
+}
+
+.open .listItemHead span {
+    width: 3px;
+    height: 20px;
+    background: #FFAD1F;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.open .listItemHead span::before,
+.open .listItemHead span::after {
+    content: '';
+    width: 3px;
+    height: 14px;
+    background: #FFAD1F;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+}
+
+.open .listItemHead span::before {
+    right: -7px;
+}
+
+.open .listItemHead span::after {
+    left: -7px;
+}
+
+.listItemBody {
+    padding: 0 25px 0 10px;
+    display: none;
+}
+
+.listItemBody>* {
+    font-size: 13px;
+    line-height: 36px;
+    color: #A0A0A0;
+}
+
+.listItemBody>*:hover {
+    color: #FFAD1F;
+    cursor: pointer;
+}
+
+.open .listItemHead {
+    color: #FFAD1F;
+}
+
+.open .listItemHead::before {
+    content: url('../images/icon-play-orange.svg');
+}
+
+.open .listItemBody {
+    display: block;
+}
+
+.courseControls {
+    padding: 5px 0 0 0;
+    display: flex;
+}
+
+.courseControl {
+    width: 50%;
+    text-align: center;
+}
+
+.courseControl label {
+    color: #565656;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 38px;
+    margin: 0;
+}
+
+.courseControl h5 {
+    color: #929292;
+    font-size: 15px;
+    line-height: 28px;
+    margin: 0;
+}
+
+.controlIcon {
+    width: 34px;
+    height: 34px;
+    font-size: 25px;
+    background: rgba(255, 173, 31, 0.2);
+    color: #FFAD1F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.controlIcon:hover {
+    background: #FFAD1F;
+    color: #fff;
+}
+
+.courseDetails {
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+    padding: 25px;
+}
+
+.detailsBlock {
+    margin-bottom: 15px;
+}
+
+.detailsBlock p {
+    color: #929292;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.courseAddComments {
+    padding: 20px 30px 30px;
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.courseAddComments h3 {
+    margin-bottom: 10px;
+}
+
+.courseAddComments textarea {
+    border-radius: 0;
+}
+
+.quizBox {
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+    padding: 30px;
+}
+
+.quizCounts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.quizCount {
+    width: 86px;
+    height: 86px;
+    background: rgba(255, 173, 31, 0.2);
+    border: 2px dashed #FFAD1F;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quizCount>* {
+    font-size: 12px;
+    line-height: 28px;
+    color: #404040;
+    font-weight: 500;
+    margin: 0;
+}
+
+.quizQuestions {
+    margin-bottom: 30px;
+}
+
+.quizQuestion {
+
+    display: none;
+}
+
+.quizQuestion.active {
+    display: block;
+}
+
+.quizQuestionHead {
+    background: #FCFCFC;
+    border-radius: 8px;
+    color: #404040;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 12px 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.quizQuestionBody li {
+    display: flex;
+    align-items: center;
+    color: #929292;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ECECEC;
+    cursor: pointer;
+}
+
+.quizQuestionBody label {
+    margin: 0 5px 0 0;
+}
+
+.quizQuestionBody input {
+    cursor: pointer;
+}
+
+.testControls .controlIcon {
+    margin-top: 12px;
+}
+
+.countTmer.finished {
+    background: #E8479F;
+    border-color: #E8479F;
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .courseView video {
+        min-height: 250px;
+    }
+
+    .playVideo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .playVideo span {
+        border-left: 18px solid #fff;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+
+    .playVideo::before,
+    .playVideo::after {
+        width: 55px;
+        height: 55px;
+    }
+
+    .courseControl label {
+        font-size: 12px;
+    }
+
+    .courseControl h5 {
+        font-size: 11px;
+    }
+
+    .courseControls {
+        margin-bottom: 30px;
+    }
+
+    .courseListHead {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .listItem {
+        padding: 5px 10px;
+    }
+
+    .listItemHead {
+        font-size: 11px;
+        padding-right: 15px;
+    }
+
+    .listItemHead::before {
+        content: url(../images/icon-play.png);
+        top: 4px;
+    }
+
+    .listItemBody {
+        padding: 0 15px;
+    }
+
+    .listItemBody>* {
+        font-size: 11px;
+        line-height: 30px;
+    }
+
+    .open .listItemHead::before {
+        content: url(../images/icon-play-orange-sm.png);
+    }
+
+    .courseDetails {
+        padding: 12px;
+    }
+
+    .detailsBlock p {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .detailsBlock .courseTitle {
+        margin-bottom: 0;
+    }
+
+    .quizBox {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+
+    .quizCount {
+        width: 70px;
+        height: 70px;
+    }
+
+    .quizCount>* {
+        font-size: 11px;
+        line-height: 21px;
+    }
+
+    .countTmer.finished {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .quizQuestionHead {
+        font-size: 12px;
+        line-height: 25px;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
+
+    .quizQuestionBody li {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+}
+
 
 /*==========================||---------------------------||========================*/
-/*==========================||         Pagination        ||========================*/
+/*==========================||            Loader         ||========================*/
 /*==========================||---------------------------||========================*/
 
-@media screen and (max-width:768px) {}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #275EFE;
+}
 
-/*==========================||---------------------------||========================*/
-/*==========================||         Pagination        ||========================*/
-/*==========================||---------------------------||========================*/
+.book {
+    width: 32px;
+    height: 12px;
+    position: relative;
+    margin: 32px 0 0 0;
+    zoom: 1.5;
+}
 
-@media screen and (max-width:768px) {}
+.book .bookInner {
+    width: 32px;
+    height: 12px;
+    position: relative;
+    -webkit-transform-origin: 2px 2px;
+    transform-origin: 2px 2px;
+    -webkit-transform: rotateZ(-90deg);
+    transform: rotateZ(-90deg);
+    -webkit-animation: book 6.8s ease infinite;
+    animation: book 6.8s ease infinite;
+}
 
+.book .bookInner .bookLeft,
+.book .bookInner .bookRight {
+    width: 60px;
+    height: 4px;
+    top: 0;
+    border-radius: 2px;
+    background: #fff;
+    position: absolute;
+}
 
-/*==========================||---------------------------||========================*/
-/*==========================||         Pagination        ||========================*/
-/*==========================||---------------------------||========================*/
+.book .bookInner .bookLeft:before,
+.book .bookInner .bookRight:before {
+    content: '';
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: inherit;
+    position: absolute;
+    top: -10px;
+    left: 6px;
+}
 
-/*==========================||---------------------------||========================*/
-/*==========================||         Pagination        ||========================*/
-/*==========================||---------------------------||========================*/
+.book .bookInner .bookLeft {
+    right: 28px;
+    -webkit-transform-origin: 58px 2px;
+    transform-origin: 58px 2px;
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+    -webkit-animation: left 6.8s ease infinite;
+    animation: left 6.8s ease infinite;
+}
 
-/*==========================||---------------------------||========================*/
-/*==========================||         Pagination        ||========================*/
-/*==========================||---------------------------||========================*/
+.book .bookInner .bookRight {
+    left: 28px;
+    -webkit-transform-origin: 2px 2px;
+    transform-origin: 2px 2px;
+    -webkit-transform: rotateZ(-90deg);
+    transform: rotateZ(-90deg);
+    -webkit-animation: right 6.8s ease infinite;
+    animation: right 6.8s ease infinite;
+}
 
+.book .bookInner .bookMiddle {
+    width: 32px;
+    height: 12px;
+    border: 4px solid #fff;
+    border-top: 0;
+    border-radius: 0 0 9px 9px;
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+}
 
+.book ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
 
+.book ul li {
+    height: 4px;
+    border-radius: 2px;
+    -webkit-transform-origin: 100% 2px;
+    transform-origin: 100% 2px;
+    width: 48px;
+    right: 0;
+    top: -10px;
+    position: absolute;
+    background: #fff;
+    -webkit-transform: rotateZ(0deg) translateX(-18px);
+    transform: rotateZ(0deg) translateX(-18px);
+    -webkit-animation-duration: 6.8s;
+    animation-duration: 6.8s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
 
-/*==========================||---------------------------||========================*/
-/*==========================||        Text Wrapper       ||========================*/
-/*==========================||---------------------------||========================*/
+.book ul li:nth-child(0) {
+    -webkit-animation-name: page-0;
+    animation-name: page-0;
+}
+
+.book ul li:nth-child(1) {
+    -webkit-animation-name: page-1;
+    animation-name: page-1;
+}
+
+.book ul li:nth-child(2) {
+    -webkit-animation-name: page-2;
+    animation-name: page-2;
+}
+
+.book ul li:nth-child(3) {
+    -webkit-animation-name: page-3;
+    animation-name: page-3;
+}
+
+.book ul li:nth-child(4) {
+    -webkit-animation-name: page-4;
+    animation-name: page-4;
+}
+
+.book ul li:nth-child(5) {
+    -webkit-animation-name: page-5;
+    animation-name: page-5;
+}
+
+.book ul li:nth-child(6) {
+    -webkit-animation-name: page-6;
+    animation-name: page-6;
+}
+
+.book ul li:nth-child(7) {
+    -webkit-animation-name: page-7;
+    animation-name: page-7;
+}
+
+.book ul li:nth-child(8) {
+    -webkit-animation-name: page-8;
+    animation-name: page-8;
+}
+
+.book ul li:nth-child(9) {
+    -webkit-animation-name: page-9;
+    animation-name: page-9;
+}
+
+.book ul li:nth-child(10) {
+    -webkit-animation-name: page-10;
+    animation-name: page-10;
+}
+
+.book ul li:nth-child(11) {
+    -webkit-animation-name: page-11;
+    animation-name: page-11;
+}
+
+.book ul li:nth-child(12) {
+    -webkit-animation-name: page-12;
+    animation-name: page-12;
+}
+
+.book ul li:nth-child(13) {
+    -webkit-animation-name: page-13;
+    animation-name: page-13;
+}
+
+.book ul li:nth-child(14) {
+    -webkit-animation-name: page-14;
+    animation-name: page-14;
+}
+
+.book ul li:nth-child(15) {
+    -webkit-animation-name: page-15;
+    animation-name: page-15;
+}
+
+.book ul li:nth-child(16) {
+    -webkit-animation-name: page-16;
+    animation-name: page-16;
+}
+
+.book ul li:nth-child(17) {
+    -webkit-animation-name: page-17;
+    animation-name: page-17;
+}
+
+.book ul li:nth-child(18) {
+    -webkit-animation-name: page-18;
+    animation-name: page-18;
+}
+
+@-webkit-keyframes page-0 {
+    4% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    13%,
+    54% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    63% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-0 {
+    4% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    13%,
+    54% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    63% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-1 {
+    5.86% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    14.74%,
+    55.86% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    64.74% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-1 {
+    5.86% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    14.74%,
+    55.86% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    64.74% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-2 {
+    7.72% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    16.48%,
+    57.72% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    66.48% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-2 {
+    7.72% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    16.48%,
+    57.72% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    66.48% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-3 {
+    9.58% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    18.22%,
+    59.58% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    68.22% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-3 {
+    9.58% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    18.22%,
+    59.58% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    68.22% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-4 {
+    11.44% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    19.96%,
+    61.44% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    69.96% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-4 {
+    11.44% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    19.96%,
+    61.44% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    69.96% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-5 {
+    13.3% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    21.7%,
+    63.3% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    71.7% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-5 {
+    13.3% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    21.7%,
+    63.3% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    71.7% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-6 {
+    15.16% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    23.44%,
+    65.16% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    73.44% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-6 {
+    15.16% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    23.44%,
+    65.16% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    73.44% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-7 {
+    17.02% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    25.18%,
+    67.02% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    75.18% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-7 {
+    17.02% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    25.18%,
+    67.02% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    75.18% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-8 {
+    18.88% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    26.92%,
+    68.88% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    76.92% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-8 {
+    18.88% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    26.92%,
+    68.88% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    76.92% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-9 {
+    20.74% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    28.66%,
+    70.74% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    78.66% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-9 {
+    20.74% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    28.66%,
+    70.74% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    78.66% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-10 {
+    22.6% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    30.4%,
+    72.6% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    80.4% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-10 {
+    22.6% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    30.4%,
+    72.6% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    80.4% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-11 {
+    24.46% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    32.14%,
+    74.46% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    82.14% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-11 {
+    24.46% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    32.14%,
+    74.46% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    82.14% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-12 {
+    26.32% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    33.88%,
+    76.32% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    83.88% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-12 {
+    26.32% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    33.88%,
+    76.32% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    83.88% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-13 {
+    28.18% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    35.62%,
+    78.18% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    85.62% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-13 {
+    28.18% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    35.62%,
+    78.18% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    85.62% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-14 {
+    30.04% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    37.36%,
+    80.04% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    87.36% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-14 {
+    30.04% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    37.36%,
+    80.04% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    87.36% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-15 {
+    31.9% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    39.1%,
+    81.9% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    89.1% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-15 {
+    31.9% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    39.1%,
+    81.9% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    89.1% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-16 {
+    33.76% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    40.84%,
+    83.76% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    90.84% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-16 {
+    33.76% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    40.84%,
+    83.76% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    90.84% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-17 {
+    35.62% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    42.58%,
+    85.62% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    92.58% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-17 {
+    35.62% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    42.58%,
+    85.62% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    92.58% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes page-18 {
+    37.48% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    44.32%,
+    87.48% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    94.32% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@keyframes page-18 {
+    37.48% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+
+    44.32%,
+    87.48% {
+        -webkit-transform: rotateZ(180deg) translateX(-18px);
+        transform: rotateZ(180deg) translateX(-18px);
+    }
+
+    94.32% {
+        -webkit-transform: rotateZ(0deg) translateX(-18px);
+        transform: rotateZ(0deg) translateX(-18px);
+    }
+}
+
+@-webkit-keyframes left {
+    4% {
+        -webkit-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+    }
+
+    10%,
+    40% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+
+    46%,
+    54% {
+        -webkit-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+    }
+
+    60%,
+    90% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+
+    96% {
+        -webkit-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+    }
+}
+
+@keyframes left {
+    4% {
+        -webkit-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+    }
+
+    10%,
+    40% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+
+    46%,
+    54% {
+        -webkit-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+    }
+
+    60%,
+    90% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+
+    96% {
+        -webkit-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+    }
+}
+
+@-webkit-keyframes right {
+    4% {
+        -webkit-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+    }
+
+    10%,
+    40% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+
+    46%,
+    54% {
+        -webkit-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+    }
+
+    60%,
+    90% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+
+    96% {
+        -webkit-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+    }
+}
+
+@keyframes right {
+    4% {
+        -webkit-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+    }
+
+    10%,
+    40% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+
+    46%,
+    54% {
+        -webkit-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+    }
+
+    60%,
+    90% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+
+    96% {
+        -webkit-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+    }
+}
+
+@-webkit-keyframes book {
+    4% {
+        -webkit-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+    }
+
+    10%,
+    40% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+        -webkit-transform-origin: 2px 2px;
+        transform-origin: 2px 2px;
+    }
+
+    40.01%,
+    59.99% {
+        -webkit-transform-origin: 30px 2px;
+        transform-origin: 30px 2px;
+    }
+
+    46%,
+    54% {
+        -webkit-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+    }
+
+    60%,
+    90% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+        -webkit-transform-origin: 2px 2px;
+        transform-origin: 2px 2px;
+    }
+
+    96% {
+        -webkit-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+    }
+}
+
+@keyframes book {
+    4% {
+        -webkit-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+    }
+
+    10%,
+    40% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+        -webkit-transform-origin: 2px 2px;
+        transform-origin: 2px 2px;
+    }
+
+    40.01%,
+    59.99% {
+        -webkit-transform-origin: 30px 2px;
+        transform-origin: 30px 2px;
+    }
+
+    46%,
+    54% {
+        -webkit-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+    }
+
+    60%,
+    90% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+        -webkit-transform-origin: 2px 2px;
+        transform-origin: 2px 2px;
+    }
+
+    96% {
+        -webkit-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+    }
+}
